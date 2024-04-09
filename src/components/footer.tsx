@@ -1,33 +1,77 @@
 import React from 'react'
 import styles from '@/app/page.module.css'
-import memberOfImage1 from '@/images/nievs.png'
+import marker1 from '@/images/marker1.png'
+import marker2 from '@/images/marker2.png'
+import marker3 from '@/images/marker3.png'
+import marker4 from '@/images/marker4.png'
 import Image from 'next/image'
 
 
 const Footer = () => {
     return (
-        <div className='flex h-auto sm:h-[auto]  w-screen bg-gray-500'>
+        <div className='flex h-auto sm:h-[auto] w-screen bg-neutral-700 text-white'>
             <div className={styles.container} style={{width:'100%', height:'100%', paddingTop:'2rem'}}>
-      <div   className='grid grid-rows-[auto_auto] gap-y-5 h-full w-full'>
+      <div   className='grid grid-rows-[auto_auto] gap-y-5 h-full w-full mx-auto max-w-[1300px]'>
                     <div className='flex justify-center items-center h-full py-5'>
-                        <div className="grid grid-cols-1 gap-x-[10rem] gap-y-16 lg:grid-cols-2">
+                        <div className="grid grid-cols-1 gap-x-[8rem] gap-y-16 lg:grid-cols-1">
                             <div>
-                                <p className='flex justify-center font-semibold text-xl mb-5'>Member of</p>
-                                <div className='grid grid-cols-1 gap-y-3 mb-3 sm:grid-cols-3 justify-items-center items-center'>
-                                <Image src={memberOfImage1} alt='' style={{height:'100px', width:'100px'}}/>
-                                <Image src={memberOfImage1} alt='' style={{height:'100px', width:'100px'}}/>
-                                    <Image src={memberOfImage1} alt='' style={{ height: '100px', width: '100px' }} />
+                                <p className='flex justify-center font-semibold text-xl mb-5'>Our Offices</p>
+                                <div className='grid grid-cols-2 gap-y-3 gap-x-4 sm:gap-x-10 mb-3 sm:grid-cols-4 items-center w-full text-center'>
+                                    <div className='flex flex-col gap-x-1 '>
+                                        <div className='flex justify-center'><Image src={marker1} alt=''/></div>
+                                        <p className='flex justify-center text-lg py-2'>Lagos Island Office</p>
+                                        <p className='flex justify-center'>Suite 188 Block A2-16, Sura Shopping Complex, Simpson Street, Lagos Island, Lagos</p>
+                                        <p className='flex justify-center'>0909 6447 703</p>
+                                        <p className='flex justify-center'>info@mceastcourt.com</p>
                                     </div>
-                                <div className='grid grid-cols-1 gap-y-3 sm:grid-cols-2 justify-items-center items-center'>
-                                <Image src={memberOfImage1} alt='' style={{height:'100px', width:'100px'}}/>
-                                <Image src={memberOfImage1} alt='' style={{height:'100px', width:'100px'}}/>
+                                    <div className='flex flex-col gap-x-1 '>
+                                        <div className='flex justify-center'><Image src={marker2} alt=''/></div>
+                                        <p className='flex justify-center text-lg py-2'>Abuja Office</p>
+                                        <p className='flex justify-center'>Suite B4, Bobsar Complex (first floor), No. 4, Michika Street off Ahmadu Bello Way, Area 11, Abuja, F.C.T.</p>
+                                        <p className='flex justify-center'>0909 6447 703</p>
+                                        <p className='flex justify-center'>info@mceastcourt.com</p>
                                     </div>
+                                    <div className='flex flex-col gap-x-1 '>
+                                        <div className='flex justify-center'><Image src={marker3} alt=''/></div>
+                                        <p className='flex justify-center text-lg py-2'>Anambra Office</p>
+                                        <p className='flex justify-center'>
+20, Onitsha Road, Nnewi, Anambra State.</p>
+                                        <p className='flex justify-center'>0909 6447 703</p>
+                                        <p className='flex justify-center'>info@mceastcourt.com</p>
+                                    </div>
+                                    <div className='flex flex-col gap-x-1 '>
+                                        <div className='flex justify-center'><Image src={marker4} alt=''/></div>
+                                        <p className='flex justify-center text-lg py-2'>PortHarcourt Office</p>
+                                        <p className='flex justify-center'>Plot 209 East West Road, Rumuodara, Port Harcourt, Rivers State.</p>
+                                        <p className='flex justify-center'>0909 6447 703</p>
+                                        <p className='flex justify-center'>info@mceastcourt.com</p>
+                                    </div>                                </div>
                             </div>
-                            <div className='flex flex-col sm:flex-row  gap-y-16 sm:gap-x-12'>
+                            <div className='flex flex-col sm:flex-row  gap-y-16 gap-x-[12rem]  justify-center'>
                             <nav><ul role="list" className="grid grid-cols-1 justify-items-center items-center">
                                 <li>
-                                    <div className="font-display text-sm font-semibold tracking-wider text-neutral-950">Work</div>
-                                    <ul role="list" className="mt-4 text-sm text-neutral-700">
+                                    <div className="font-display text-sm font-semibold tracking-wider ">Connect with us</div>
+                                    <ul role="list" className="mt-4 text-sm grid grid-cols-4 gap-x-4">
+                                        <li className="mt-4">
+                                            <a className="transition hover:text-neutral-950" href="/work/family-fund">FamilyFund</a>
+                                        </li><li className="mt-4">
+                                            <a className="transition hover:text-neutral-950" href="/work/unseal">Unseal</a>
+                                        </li>
+                                        <li className="mt-4">
+                                            <a className="transition hover:text-neutral-950" href="/work/phobia">Phobia</a>
+                                        </li>
+                                        <li className="mt-4">
+                                            <a className="transition hover:text-neutral-950" href="/work">See all <span aria-hidden="true">→</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                </li>
+                            </ul>
+                                </nav>                            <nav><ul role="list" className="grid grid-cols-1 justify-items-center items-center">
+                                <li>
+                                    <div className="font-display text-sm font-semibold tracking-wider ">Quick links</div>
+                                    <ul role="list" className="mt-4 text-sm ">
                                         <li className="mt-4">
                                             <a className="transition hover:text-neutral-950" href="/work/family-fund">FamilyFund</a>
                                         </li><li className="mt-4">
@@ -46,8 +90,8 @@ const Footer = () => {
                             </ul>
                                 </nav>
                                     <form className="max-w-sm">
-                                        <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">Sign up for our newsletter</h2>
-                                        <p className="mt-4 text-sm text-neutral-700">Subscribe to get the latest design news, articles, resources and inspiration.</p>
+                                        <h2 className="font-display text-sm font-semibold tracking-wider ">Sign up for our newsletter</h2>
+                                        <p className="mt-4 text-sm ">Subscribe to get the latest design news, articles, resources and inspiration.</p>
                                         <div className="relative mt-6">
                                             <input type="email" placeholder="Email address" autoComplete="email" aria-label="Email address" className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pl-6 pr-20 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5"/>
                                                 <div className="absolute inset-y-1 right-1 flex justify-end">
@@ -61,7 +105,7 @@ const Footer = () => {
                                 </form>
                                 </div>
                                 </div></div>
-                    <div className='flex text-black border-t-2 border-gray-600 h-full py-3 w-full px-3 items-center justify-between'>
+                    <div className='flex border-t-2 border-gray-600 h-full py-3 w-full px-3 items-center justify-between'>
                         <p className='text-sm sm:text-base'>&#169; Mbelu Consulting</p>
                         <p>linkedin x</p>
           </div>

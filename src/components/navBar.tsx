@@ -52,14 +52,14 @@ const NavBar = () => {
               </button>
             </div>
             </div>
-              <div className='relative mt-10 place-content-center text-center text-lg text-amber-800 font-semibold h-auto'>
+              <div className='relative mt-10 place-content-center text-center text-lg text-amber-800 font-semibold h-auto' >
                 <div className='grid grid-rows-6 gap-y-8'>
-                <div><Link href='/' className='hover:text-gray-600 '>Home</Link></div>
-                <div><Link href='/profile' className='hover:text-gray-600 '>Profile</Link></div>
-                  <div><Link href='/services' className='hover:text-gray-600'>Services</Link></div>
-                  <div><Link href='/team' className='hover:text-gray-600'>Our People / Team</Link></div>
-                  <div><Link href='/contact_us' className='hover:text-gray-600'>Contact</Link></div>
-                  <div><Link href='£' className='hover:text-gray-600'>Properties</Link></div>
+                <div><Link href='/' className='hover:text-gray-600 ' onClick={handleMenu}>Home</Link></div>
+                <div><Link href='/profile' className='hover:text-gray-600 ' onClick={handleMenu}>Profile</Link></div>
+                  <div><Link href='/services' className='hover:text-gray-600' onClick={handleMenu}>Services</Link></div>
+                  <div><Link href='/team' className='hover:text-gray-600' onClick={handleMenu}>Our People / Team</Link></div>
+                  <div><Link href='/contact_us' className='hover:text-gray-600' onClick={handleMenu}>Contact</Link></div>
+                  <div><Link href='£' className='hover:text-gray-600' onClick={handleMenu}>Properties</Link></div>
               </div>
             </div>
         </div>

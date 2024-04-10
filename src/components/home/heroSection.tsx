@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import heroBg from '@/images/heroBg.jpg'
 import styles from "../../app/page.module.css";
+import ShowMore_ScrollButton from './showMore_ScrollButton';
 
 
 const HeroSection = () => {
@@ -37,8 +38,8 @@ const HeroSection = () => {
             </div>
           </div></div>
         </div>
-                </div>
-            
+        </div>
+         <ShowMore_ScrollButton scrollToElement='aboutUs'/>   
       </div>
 
   )

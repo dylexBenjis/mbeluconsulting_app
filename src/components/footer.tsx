@@ -50,7 +50,7 @@ const Footer = () => {
                             <div className='flex flex-col sm:flex-row  gap-y-16 gap-x-[12rem]  justify-center'>
                             <nav><ul role="list" className="grid grid-cols-1 justify-items-center items-center">
                                 <li>
-                                    <div className="font-display text-sm font-semibold tracking-wider ">Connect with us</div>
+                                    <div className="font-display font-semibold text-lg tracking-wider ">Connect with us</div>
                                     <ul role="list" className="mt-4 text-sm grid grid-cols-4 gap-x-4">
                                         <li className="mt-4">
                                             <a className="transition hover:text-neutral-950" href="/work/family-fund">FamilyFund</a>
@@ -70,7 +70,7 @@ const Footer = () => {
                             </ul>
                                 </nav>                            <nav><ul role="list" className="grid grid-cols-1 justify-items-center items-center">
                                 <li>
-                                    <div className="font-display text-sm font-semibold tracking-wider ">Quick links</div>
+                                    <div className="font-display font-semibold text-lg tracking-wider ">Quick links</div>
                                     <ul role="list" className="mt-4 text-sm ">
                                         <li className="mt-4">
                                             <a className="transition hover:text-neutral-950" href="/work/family-fund">FamilyFund</a>
@@ -90,12 +90,12 @@ const Footer = () => {
                             </ul>
                                 </nav>
                                     <form className="max-w-sm">
-                                        <h2 className="font-display text-sm font-semibold tracking-wider ">Sign up for our newsletter</h2>
+                                        <h2 className="font-display font-semibold text-lg tracking-wider ">Sign up for our newsletter</h2>
                                         <p className="mt-4 text-sm ">Subscribe to get the latest design news, articles, resources and inspiration.</p>
                                         <div className="relative mt-6">
-                                            <input type="email" placeholder="Email address" autoComplete="email" aria-label="Email address" className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pl-6 pr-20 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5"/>
+                                            <input type="email" placeholder="Email address" autoComplete="email" aria-label="Email address" className="block w-full rounded-2xl border border-neutral-300/60 bg-transparent py-4 pl-6 pr-20 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5"/>
                                                 <div className="absolute inset-y-1 right-1 flex justify-end">
-                                                    <button type="submit" aria-label="Submit" className="flex aspect-square h-full items-center justify-center rounded-xl bg-neutral-950 text-white transition hover:bg-neutral-800">
+                                                    <button type="submit" aria-label="Submit" className="flex aspect-square h-full items-center justify-center rounded-xl bg-amber-950 text-white transition hover:bg-neutral-800">
                                                         <svg viewBox="0 0 16 6" aria-hidden="true" className="w-4">
                                                             <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M16 3 10 .5v2H0v1h10v2L16 3Z"></path>
                                                     </svg>
@@ -107,7 +107,7 @@ const Footer = () => {
                                 </div></div>
                     <div className='flex border-t-2 border-gray-600 h-full py-3 w-full px-3 items-center justify-between'>
                         <p className='text-sm sm:text-base'>&#169; Mbelu Consulting</p>
-                        <p>linkedin x</p>
+                        <p>built by dylexBenji</p>
           </div>
 
             </div>

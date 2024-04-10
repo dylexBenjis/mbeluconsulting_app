@@ -2,7 +2,8 @@ import Image from 'next/image'
 import React from 'react'
 import heroBg from '@/images/heroBg.jpg'
 import styles from "../../app/page.module.css";
-import ShowMore_ScrollButton from './showMore_ScrollButton';
+import ShowMore_ScrollButton from './clientSideComponents/showMore_ScrollButton';
+import Component_FadeIn from './clientSideComponents/component_FadeIn';
 
 
 const HeroSection = () => {
@@ -17,26 +18,20 @@ const HeroSection = () => {
                     <div className={styles.container}>
           <div className="sm:mb-8 sm:flex sm:justify-center ">
           </div>
-          <div className="text-center">
+              <Component_FadeIn>
+                          <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
               MBELU CONSULTING
             </h1>
-            <p className="mt-6 text-lg leading-8 text-white">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat fugiat aliqua.
+            <p className="mt-6 text-2xl font-bold leading-8 text-white">
+              CHARTERED ESTATE SURVEYOR AND VALUER
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="#"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Get started
-              </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-white">
-                Learn more <span aria-hidden="true">→</span>
-              </a>
+
             </div>
-          </div></div>
+              </div>
+            </Component_FadeIn>
+            </div>
         </div>
         </div>
          <ShowMore_ScrollButton scrollToElement='aboutUs'/>   

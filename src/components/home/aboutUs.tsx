@@ -2,7 +2,8 @@ import React from 'react'
 import styles from "../../app/page.module.css";
 import imagesrc from '../../images/test.jpg'
 import Image from 'next/image';
-import ShowMore_ScrollButton from './showMore_ScrollButton';
+import ShowMore_ScrollButton from './clientSideComponents/showMore_ScrollButton';
+import Component_slideLeft from './clientSideComponents/component_slideLeft';
 
 
 const AboutUs = () => {
@@ -14,7 +15,8 @@ const AboutUs = () => {
                 <div className='absolute inset-0 backdrop-opacity-20 bg-gradient-to-b  from-white from-5% via-white/15 via-20%  to-white to-95%'>
                 <div className='absolute inset-0 backdrop-opacity-20 bg-gradient-to-r  from-white from-5% via-white/15 via-20%  to-white to-95%'>
 
-        <div className="flex mx-auto max-w-[1300px] justify-center items-center h-screen">
+          <div className="flex mx-auto max-w-[1300px] justify-center items-center h-screen">
+         <Component_slideLeft>   
       <div className={styles.container}>
         <div className='flex flex-col gap-y-5 sm:w-[30rem] justify-center items-center '>
         <h1 className='text-2xl sm:text-4xl font-semibold mb-3 sm:mb-6'>Uncompromised Value</h1>
@@ -25,7 +27,7 @@ const AboutUs = () => {
         <span className="relative top-px">View Our Profile</span>
           </a>
           </div>
-        </div></div>
+        </div></Component_slideLeft></div>
       </div>
       </div>
       <ShowMore_ScrollButton scrollToElement='services_and_team'/>

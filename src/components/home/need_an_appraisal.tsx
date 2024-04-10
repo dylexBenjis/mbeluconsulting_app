@@ -1,4 +1,5 @@
 import React from 'react'
+import Component_FadeIn from './clientSideComponents/component_FadeIn';
 import styles from "../../app/page.module.css";
 
 
@@ -7,7 +8,7 @@ const Need_an_appraisal = () => {
       <div className='h-screen' id='needAnAppraisal'>
             <div className="flex mx-auto max-w-[1300px] justify-center items-center h-screen">
                 <div className={styles.container}>
-                    <div>
+                    <Component_FadeIn>
                         <h3 className='text-2xl/7 sm:text-4xl/[3.5rem] font-semibold mb-3 sm:mb-6 text-amber-950 text-center'>Need an appraisal? <br/><span className='italic'>We can help.</span></h3>
                         <div className="text-base/7 sm:text-lg/10 text-center">
                             <p className='mb-3'>you&#39;re just a few clicks away.<br/>
@@ -16,7 +17,7 @@ const Need_an_appraisal = () => {
                                 <span className="relative top-px">ORDER FOR AN APPRAISAL</span>
                             </a>
                       </div>
-                    </div>
+                    </Component_FadeIn>
                 </div>
             </div>
       </div>

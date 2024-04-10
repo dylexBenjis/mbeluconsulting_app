@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import mbeluConsulting_Logo from '@/images/mbeluConsulting_Logo.png'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const NavBar = () => {
 
@@ -32,10 +33,10 @@ const NavBar = () => {
   }
 
   return (
-    <div className='relative'>
-      <div className={menuOpen ? (scrolled||menuOpen?'fixed left-0 right-0 z-40 pt-5 pb-5 h-[20rem] sm:h-[32rem] bg-white shadow-lg':"fixed left-0 right-0 z-40 pt-5 pb-5 h-[5rem] sm:h-[8rem] bg-transparent"):(scrolled?'fixed left-0 right-0 z-40 pt-5 pb-5 h-[5rem] sm:h-[8rem] bg-white shadow-lg':"fixed left-0 right-0 z-40 pt-5 pb-5 h-[5rem] sm:h-[8rem] bg-transparent")} style={{transition:scrolled||menuOpen?(scrolled?(menuOpen?'height 0.3s ease-in-out':'height 0.3s ease-in-out, background 0.3s ease'):(menuOpen?'height 0.3s 0.5s ease-in-out, background 0.3s ease':'')):(menuOpen?'height 0.3s 1s ease-in-out, background 0.3s ease':'height 0.3s ease-in-out, background 0.5s 0.5s')}}>
+    <div className='relative block'>
+      <div className={menuOpen ? (scrolled||menuOpen?'overflow-hidden fixed left-0 right-0 z-40 pt-5 pb-5 h-[32rem] bg-white shadow-lg':"overflow-hidden fixed left-0 right-0 z-40 pt-5 pb-5 h-[5rem] sm:h-[8rem] bg-transparent"):(scrolled?'overflow-hidden fixed left-0 right-0 z-40 pt-5 pb-5 h-[5rem] sm:h-[8rem] bg-white shadow-lg':"overflow-hidden fixed left-0 right-0 z-40 pt-5 pb-5 h-[5rem] sm:h-[8rem] bg-transparent")} style={{transition:scrolled||menuOpen?(scrolled?(menuOpen?'height 0.3s ease-in-out':'height 0.3s ease-in-out, background 0.3s ease'):(menuOpen?'height 0.3s 0.5s ease-in-out, background 0.3s ease':'')):(menuOpen?'height 0.3s 1s ease-in-out, background 0.3s ease':'height 0.3s ease-in-out, background 0.5s 0.5s')}}>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:max-w-none">
+        <div className="mx-auto max-w-2xl lg:max-w-none gap-y-4">
           <div className="flex items-center justify-between">
             <a aria-label="Home" href="/">
               <Image src={mbeluConsulting_Logo} alt='mbeluConsulting logo' style={{transform:scrolled?'scale(1)':'scale(1.2)', transition:scrolled?'0.1s ease-in-out':'0.1s 0.6s'}} className='h-[3rem] w-[5.25rem] sm:h-[6em] sm:w-[10.5rem]'/>
@@ -50,7 +51,17 @@ const NavBar = () => {
                 </svg>
               </button>
             </div>
-          </div>
+            </div>
+              <div className='relative mt-10 place-content-center text-center text-lg text-amber-800 font-semibold h-auto'>
+                <div className='grid grid-rows-6 gap-y-8'>
+                <div><Link href='/' className='hover:text-gray-600 '>Home</Link></div>
+                <div><Link href='/profile' className='hover:text-gray-600 '>Profile</Link></div>
+                  <div><Link href='/services' className='hover:text-gray-600'>Services</Link></div>
+                  <div><Link href='/team' className='hover:text-gray-600'>Our People / Team</Link></div>
+                  <div><Link href='/contact_us' className='hover:text-gray-600'>Contact</Link></div>
+                  <div><Link href='£' className='hover:text-gray-600'>Properties</Link></div>
+              </div>
+            </div>
         </div>
       </div>
 </div>

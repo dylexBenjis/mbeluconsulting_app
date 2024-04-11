@@ -30,7 +30,7 @@ const AboutUs = () => {
         </div></Component_slideLeft></div>
       </div>
       </div>
-      <ShowMore_ScrollButton scrollToElement='services_and_team'/>
+      <ShowMore_ScrollButton scrollToElement='professionals'/>
     </div>
   )
 }

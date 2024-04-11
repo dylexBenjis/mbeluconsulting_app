@@ -42,11 +42,11 @@ const NavBar = () => {
               <Image src={mbeluConsulting_Logo} alt='mbeluConsulting logo' style={{transform:scrolled?'scale(1)':'scale(1.2)', transition:scrolled?'0.1s ease-in-out':'0.1s 0.6s'}} className='h-[3rem] w-[5.25rem] sm:h-[6em] sm:w-[10.5rem]'/>
             </a>
             <div className="flex items-center gap-x-8">
-              <a className="inline-flex px-2 py-2 text-[10px] sm:px-4 sm:py-4 sm:text-sm font-semibold border-black border-2 transition hover:bg-neutral-800" href="/contact">
-                <span className="relative top-px">ORDER FOR AN APPRAISAL</span>
+              <a className="inline-flex px-2 py-2 text-[10px] sm:px-4 sm:py-4 sm:text-sm font-semibold border-black border-2 transition hover:bg-neutral-800" href="/contact" style={{borderColor:scrolled||menuOpen?'':'grey', transition:scrolled||menuOpen?(scrolled?(menuOpen?'all 0.3s ease-in-out':'all 0.3s ease'):(menuOpen?'all 0.3s ease':'')):(menuOpen?'all 0.3s ease':'all 0.5s 0.5s')}}>
+                <span className="relative top-px" style={{color:scrolled||menuOpen?'':'grey', transition:scrolled||menuOpen?(scrolled?(menuOpen?'all 0.3s ease-in-out':'all 0.3s ease'):(menuOpen?'all 0.3s ease':'')):(menuOpen?'all 0.3s ease':'all 0.5s 0.5s')}}>ORDER FOR AN APPRAISAL</span>
               </a>
               <button type="button" aria-expanded="false" aria-controls=":R5a:" className="group -m-2.5 rounded-full p-2.5 transition hover:bg-neutral-950/10" aria-label="Toggle navigation " onClick={handleMenu}>
-                <svg viewBox="0 0 24 24" aria-hidden="true" className="h-8 w-8 fill-neutral-950 group-hover:fill-neutral-700">
+                <svg viewBox="0 0 24 24" aria-hidden="true" className="h-8 w-8 fill-neutral-950 group-hover:fill-neutral-700" style={{fill:scrolled||menuOpen?'':'gray', transition:scrolled||menuOpen?(scrolled?(menuOpen?'all 0.3s ease-in-out':'all 0.3s ease'):(menuOpen?'all 0.3s ease':'')):(menuOpen?'all 0.3s ease':'all 0.5s 0.5s')}}>
                   <path d="M2 6h20v2H2zM2 16h20v2H2z"></path>
                 </svg>
               </button>

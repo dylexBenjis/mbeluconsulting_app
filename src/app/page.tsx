@@ -4,12 +4,14 @@ import HeroSection from "@/components/home/heroSection";
 import AboutUs from "@/components/home/aboutUs";
 import Services_and_team from "@/components/home/services_and_team";
 import Need_an_appraisal from "@/components/home/need_an_appraisal";
+import ProfessionalsComponents from "@/components/home/professionals, experience";
 
 export default function Home() {
   return (
     <div>
       <HeroSection />
       <AboutUs />
+      <ProfessionalsComponents/>
       <Services_and_team />
       <Need_an_appraisal/>
     </div>

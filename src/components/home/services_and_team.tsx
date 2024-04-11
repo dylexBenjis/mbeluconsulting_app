@@ -10,9 +10,9 @@ import Component_slideRight from './clientSideComponents/component_slideRight';
 const Services_and_team = () => {
   return (
       <div className="relative w-screen h-screen" id='services_and_team'>
-          <div className='grid grid-rows-2 sm:grid-cols-2  h-full '>
+          <div className='grid grid-rows-2 lg:grid-cols-2  h-full '>
           <Component_slideRight>
-          <div className='relative h-[calc(100vh/2)] sm:h-screen'>
+          <div className='relative h-[calc(100vh/2)] lg:h-screen'>
               <div className='absolute h-full'>
                   <Image src={src1} alt='' style={{ objectFit: 'cover', height: '100%',}}/>
                   
@@ -37,7 +37,7 @@ const Services_and_team = () => {
                       </div>
         </Component_slideRight>
           <Component_slideLeft>
-          <div className='relative h-[calc(100vh/2)] sm:h-screen'>
+          <div className='relative h-[calc(100vh/2)] lg:h-screen'>
               <div className='absolute h-full'>
                   <Image src={src2} alt='' style={{ objectFit: 'cover', height: '100%', backdropFilter:'opacity(80%)'}}/>
                   

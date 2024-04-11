@@ -32,6 +32,14 @@ const NavBar = () => {
     }else{setMenuOpen(false)}
   }
 
+  const alert_properties = () => {
+    const a = confirm('you will be redirected to eastcourt, a subsidiary of mbelu consulting to see available properties.')
+    if (a) {
+      window.open('https://www.mceastcourt.com', '_blank')
+      
+    }
+  }
+
   return (
     <div className='relative block'>
       <div className={menuOpen ? (scrolled||menuOpen?'overflow-hidden fixed left-0 right-0 z-40 pt-5 pb-5 h-[32rem] bg-white shadow-lg':"overflow-hidden fixed left-0 right-0 z-40 pt-5 pb-5 h-[5rem] sm:h-[8rem] bg-transparent"):(scrolled?'overflow-hidden fixed left-0 right-0 z-40 pt-5 pb-5 h-[5rem] sm:h-[8rem] bg-white shadow-lg':"overflow-hidden fixed left-0 right-0 z-40 pt-5 pb-5 h-[5rem] sm:h-[8rem] bg-transparent")} style={{transition:scrolled||menuOpen?(scrolled?(menuOpen?'height 0.3s ease-in-out':'height 0.3s ease-in-out, background 0.3s ease'):(menuOpen?'height 0.3s 0.5s ease-in-out, background 0.3s ease':'')):(menuOpen?'height 0.3s 1s ease-in-out, background 0.3s ease':'height 0.3s ease-in-out, background 0.5s 0.5s')}}>
@@ -59,7 +67,7 @@ const NavBar = () => {
                   <div><Link href='/services' className='hover:text-gray-600' onClick={handleMenu}>Services</Link></div>
                   <div><Link href='/team' className='hover:text-gray-600' onClick={handleMenu}>Our People / Team</Link></div>
                   <div><Link href='/contact_us' className='hover:text-gray-600' onClick={handleMenu}>Contact</Link></div>
-                  <div><Link href='£' className='hover:text-gray-600' onClick={handleMenu}>Properties</Link></div>
+                  <div><a onClick={alert_properties} className='hover:text-gray-600 cursor-pointer'>Properties</a></div>
               </div>
             </div>
         </div>

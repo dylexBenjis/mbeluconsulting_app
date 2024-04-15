@@ -39,10 +39,8 @@ const HeroSection = () => {
                 <div className='absolute inset-0 backdrop-opacity-10 bg-black/65 backdrop-invert'>
                 <div className="flex mx-auto max-w-[1300px] justify-center items-center h-screen">
                     <div className={styles.container}>
-          <div className="sm:mb-8 sm:flex sm:justify-center ">
-          </div>
               <Component_FadeIn>
-                          <div className="text-center">
+            <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
               MBELU CONSULTING
             </h1>

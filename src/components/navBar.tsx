@@ -1,6 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react'
-import mbeluConsulting_Logo from '@/images/mbeluConsulting_Logo.png'
+import mbeluConsulting_Logo from '@/images/mbeluConsulting_Logo.webp'
 import Image from 'next/image'
 import Link from 'next/link'
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "../../app/page.module.css";
 import Image from 'next/image';
-import src1 from '@/images/heroBg.jpg'
+import src1 from '@/images/heroBg2.jpg'
 import src2 from '@/images/test.jpg'
 import ShowMore_ScrollButton from './clientSideComponents/showMore_ScrollButton';
 import Component_slideLeft from './clientSideComponents/component_slideLeft';
@@ -13,22 +13,22 @@ const Services_and_team = () => {
           <div className='grid grid-rows-2 lg:grid-cols-2  h-full '>
           <Component_slideRight>
           <div className='relative h-[calc(100vh/2)] lg:h-screen'>
-              <div className='absolute h-full'>
-                  <Image src={src1} alt='' style={{ objectFit: 'cover', height: '100%',}}/>
+              <div className='absolute h-full w-full'>
+                  <Image src={src1} alt='' layout='fill' objectFit='cover'/>
                   
                       </div>
 
-                  <div className='absolute flex items-center h-full backdrop-opacity-10 bg-orange-900/60 backdrop-invert '>
+                  <div className='absolute flex items-center h-full backdrop-opacity-10 bg-orange-900/60 backdrop-invert text-white'>
 
                 <div className={styles.container}>
 
                    
                       <div className="gap-y-1 sm:gap-y-5 flex flex-col h-auto w-auto" >
-                                    <h2 className='text-3xl font-medium'>Our Team</h2>
+                                    <h2 className='text-3xl font-medium'>Our Services</h2>
                                     <p className='text-lg/7'>Meet the brains behind the brawn. Our people form the foundation of our business – and we stand on very solid ground.</p>
                                     <div className='flex justify-start'>
-                                        <a className="inline-flex px-4 py-4 text-sm font-semibold border-black border-2 transition hover:bg-neutral-800" href="/contact">
-                                            <span className="relative top-px">Meet Our People</span>
+                                        <a className="inline-flex px-4 py-4 text-sm font-semibold border-white border-2 transition hover:bg-neutral-800" href="/contact">
+                                            <span className="relative top-px">See What We Do</span>
                                         </a>
                                     </div>
                                 </div>
@@ -37,9 +37,9 @@ const Services_and_team = () => {
                       </div>
         </Component_slideRight>
           <Component_slideLeft>
-          <div className='relative h-[calc(100vh/2)] lg:h-screen'>
-              <div className='absolute h-full'>
-                  <Image src={src2} alt='' style={{ objectFit: 'cover', height: '100%', backdropFilter:'opacity(80%)'}}/>
+          <div className='relative h-[calc(100vh/2)] lg:h-screen text-white'>
+              <div className='absolute h-full w-full'>
+                  <Image src={src2} alt='' layout='fill' objectFit='cover'/>
                   
                       </div>
                                         <div className='absolute flex items-center h-full  backdrop-opacity-10 bg-gray-700/60 backdrop-invert '>
@@ -51,7 +51,7 @@ const Services_and_team = () => {
                                     <h2 className='text-3xl font-medium'>Our Team</h2>
                                     <p className='text-lg/7'>Meet the brains behind the brawn. Our people form the foundation of our business – and we stand on very solid ground.</p>
                                     <div className='flex justify-start'>
-                                        <a className="inline-flex px-4 py-4 text-sm font-semibold border-black border-2 transition hover:bg-neutral-800" href="/contact">
+                                        <a className="inline-flex px-4 py-4 text-sm font-semibold border-white border-2 transition hover:bg-neutral-800" href="/contact">
                                             <span className="relative top-px">Meet Our People</span>
                                         </a>
                                     </div>

@@ -9,7 +9,17 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        zoomInOut: {
+          '0%': { transform: 'scale(1)' },
+          '100%':{ transform: 'scale(1.2)' },
+        }
+      },
+      animation: {
+        zoomInOut: 'zoomInOut 13s 1s ease infinite alternate'
+      },
+    },
   },
   plugins: [],
 }

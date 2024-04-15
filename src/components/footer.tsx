@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import styles from '@/app/page.module.css'
 import marker1 from '@/images/marker1.png'
@@ -5,9 +6,19 @@ import marker2 from '@/images/marker2.png'
 import marker3 from '@/images/marker3.png'
 import marker4 from '@/images/marker4.png'
 import Image from 'next/image'
+import { FaXTwitter, FaFacebookF, FaLinkedin,FaSquareInstagram,FaWhatsapp } from 'react-icons/fa6'
+import Link from 'next/link'
 
 
 const Footer = () => {
+
+      const alert_properties = () => {
+    const a = confirm('you will be redirected to eastcourt, a subsidiary of mbelu consulting to see available properties.')
+    if (a) {
+      window.open('https://www.mceastcourt.com', '_blank')
+      
+    }
+  }
     return (
         <div className='flex h-auto sm:h-[auto] w-screen bg-neutral-700 text-white'>
             <div className={styles.container} style={{width:'100%', height:'100%', paddingTop:'2rem'}}>
@@ -48,20 +59,23 @@ const Footer = () => {
                                     </div>                                </div>
                             </div>
                             <div className='flex flex-col sm:flex-row  gap-y-16 gap-x-[12rem]  justify-center'>
-                            <nav><ul role="list" className="grid grid-cols-1 justify-items-center items-center">
-                                <li>
+                            <nav><ul role="list" className="flex flex-row justify-center sm:justify-start items-center">
+                                <li className=''>
                                     <div className="font-display font-semibold text-lg tracking-wider ">Connect with us</div>
-                                    <ul role="list" className="mt-4 text-sm grid grid-cols-4 gap-x-4">
-                                        <li className="mt-4">
-                                            <a className="transition hover:text-neutral-950" href="/work/family-fund">FamilyFund</a>
-                                        </li><li className="mt-4">
-                                            <a className="transition hover:text-neutral-950" href="/work/unseal">Unseal</a>
+                                    <ul role="list" className="mt-4 text-4xl flex flex-row gap-x-4 h-[4rem]">
+                                        <li className="flex mt-4 w-[3.5rem] justify-center items-center">
+                                            <a className="transition hover:text-[2.65rem]" href="/work/family-fund"><FaXTwitter/></a>
+                                        </li><li className="flex mt-4 w-[3.5rem] justify-center items-center">
+                                            <a className="transition hover:text-[2.65rem]" href="/work/unseal"><FaFacebookF /></a>
                                         </li>
-                                        <li className="mt-4">
-                                            <a className="transition hover:text-neutral-950" href="/work/phobia">Phobia</a>
+                                        <li className="flex mt-4 w-[3.5rem] justify-center items-center">
+                                            <a className="transition hover:text-[2.65rem]" href="/work/phobia"><FaLinkedin /></a>
                                         </li>
-                                        <li className="mt-4">
-                                            <a className="transition hover:text-neutral-950" href="/work">See all <span aria-hidden="true">→</span></a>
+                                        <li className="flex mt-4 w-[3.5rem] justify-center items-center">
+                                            <a className="transition hover:text-[2.65rem]" href="/work"><FaSquareInstagram /></a>
+                                        </li>
+                                        <li className="flex mt-4 w-[3.5rem] justify-center items-center">
+                                            <a className="transition hover:text-[2.65rem]" href="/work"><FaWhatsapp/></a>
                                         </li>
                                     </ul>
                                 </li>
@@ -71,18 +85,13 @@ const Footer = () => {
                                 </nav>                            <nav><ul role="list" className="grid grid-cols-1 justify-items-center items-center">
                                 <li>
                                     <div className="font-display font-semibold text-lg tracking-wider ">Quick links</div>
-                                    <ul role="list" className="mt-4 text-sm ">
-                                        <li className="mt-4">
-                                            <a className="transition hover:text-neutral-950" href="/work/family-fund">FamilyFund</a>
-                                        </li><li className="mt-4">
-                                            <a className="transition hover:text-neutral-950" href="/work/unseal">Unseal</a>
-                                        </li>
-                                        <li className="mt-4">
-                                            <a className="transition hover:text-neutral-950" href="/work/phobia">Phobia</a>
-                                        </li>
-                                        <li className="mt-4">
-                                            <a className="transition hover:text-neutral-950" href="/work">See all <span aria-hidden="true">→</span></a>
-                                        </li>
+                                    <ul role="list" className="flex flex-col gap-y-[0.3rem] mt-4 text-sm">
+                                        <li><Link href='/' className='hover:text-gray-600 '>Home</Link></li>
+                                        <li><Link href='/profile' className='hover:text-gray-600 ' >Profile</Link></li>
+                                        <li><Link href='/services' className='hover:text-gray-600' >Services</Link></li>
+                                        <li><Link href='/team' className='hover:text-gray-600' >Our People / Team</Link></li>
+                                        <li><Link href='/contact_us' className='hover:text-gray-600' >Contact</Link></li>
+                                        <li><a onClick={alert_properties} className='hover:text-gray-600 cursor-pointer'>Properties</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -107,7 +116,7 @@ const Footer = () => {
                                 </div></div>
                     <div className='flex border-t-2 border-gray-600 h-full py-3 w-full px-3 items-center justify-between'>
                         <p className='text-sm sm:text-base'>&#169; Mbelu Consulting</p>
-                        <p>built by dylexBenji</p>
+                        <p className='text-gray-800'>built by dylexBenji</p>
           </div>
 
             </div>

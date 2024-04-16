@@ -61,7 +61,7 @@ Transaction Representation Consultancy among others.</div>
             </div>
             <div className={styles.container} style={{height:'auto', paddingBottom:'2rem'}}>
                   <div className='flex h-auto py-5 text-3xl sm:text-4xl font-semibold text-amber-900 items-center justify-center text-center'>
-                    We're Proud Members Of these Organizations.
+                    We&#39;re Proud Members Of these Organizations.
                   </div>
               <div className={styles.container}>
                   <div className='grid grid-cols-[300px] sm:grid-cols-[auto_auto_auto] gap-y-5 h-auto w-full gap-x-7 items-center justify-center justify-items-center'>

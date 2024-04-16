@@ -53,7 +53,7 @@ const page = () => {
                   </div>
                   </div> 
             </div>
-            <div className={styles.container} style={{height:'auto', backgroundColor:'black', borderRadius:'2.5rem', paddingBottom:'2rem'}}>
+            <div className={styles.container} style={{height:'auto', backgroundColor:'rgb(80, 26, 17)', borderRadius:'2.5rem', paddingBottom:'2rem'}}>
                   <div className='flex h-auto py-5 text-2xl sm:text-3xl font-semibold text-white'>
                     REAL ESTATE CONSULTING
                   </div>

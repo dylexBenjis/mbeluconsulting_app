@@ -17,7 +17,7 @@ module.exports = {
         }
       },
       animation: {
-        zoomInOut: 'zoomInOut 13s 1s ease infinite alternate'
+        zoomInOut: 'zoomInOut 25s 1s linear infinite alternate'
       },
     },
   },

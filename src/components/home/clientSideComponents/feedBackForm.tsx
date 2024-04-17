@@ -7,8 +7,8 @@ const FeedbackForm = () => {
   const [email, setEmail] = useState('');
   const [feedback, setFeedback] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = (props:any) => {
+    props.preventDefault();
     // Here you can handle the form submission, for example, send the feedback to your server
     console.log('Feedback submitted:', { firstName, lastName, email, feedback });
     // Reset the form

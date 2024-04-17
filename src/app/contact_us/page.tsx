@@ -30,7 +30,7 @@ const page = () => {
                       <div className='flex flex-col sm:flex-row gap-x-2'><div className='text-4xl sm:text-5xl text-amber-950'><FaRegClock/></div><div><p>Monday — Friday</p><p>9:00 AM — 6:00 PM</p></div></div>
               </div>
                               </div>
-            <div className='text-base font-normal h-[12rem] sm:h-[20rem] bg-gray-400 sm:w-[30rem] text-center'><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15858.092469942061!2d3.4048346!3d6.4552025!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b5d61fd491d%3A0xd03b144ccce6ab85!2sSURA%20Shopping%20Complex!5e0!3m2!1sen!2sng!4v1713353861241!5m2!1sen!2sng" width="100%" height="100%" style={{ border: '0', }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div className='text-base font-normal h-[12rem] sm:h-[20rem] bg-gray-400 sm:w-[30rem] text-center'><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15858.092469942061!2d3.4048346!3d6.4552025!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b5d61fd491d%3A0xd03b144ccce6ab85!2sSURA%20Shopping%20Complex!5e0!3m2!1sen!2sng!4v1713353861241!5m2!1sen!2sng" width="100%" height="100%" style={{ border: '0', }}  loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe></div>
             </div> 
                             <div className='grid xl:grid-cols-[calc(100vw-65rem)_30rem] h-auto w-full gap-x-4  py-10 items-center justify-between font-bold text-black'>
             <div className='flex flex-col py-8 gap-y-10'>
@@ -42,7 +42,7 @@ const page = () => {
                       <div className='flex flex-col sm:flex-row gap-x-2'><div className='text-4xl sm:text-5xl text-amber-950'><FaRegClock/></div><div><p>Monday — Friday</p><p>9:00 AM — 6:00 PM</p></div></div>
               </div>
                               </div>
-            <div className='text-base font-normal h-[12rem] sm:h-[20rem] bg-gray-400 sm:w-[30rem] text-center'><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.3093732214493!2d7.496347375010599!3d9.035517488886958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b8df484d605%3A0xb6d2b9f842badc00!2sBobsar%20Complex%2C%20Michika%20St%2C%20Garki%2C%20Abuja%20900103%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1713361846216!5m2!1sen!2sng" width="100%" height="100%" style={{ border: '0' }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div className='text-base font-normal h-[12rem] sm:h-[20rem] bg-gray-400 sm:w-[30rem] text-center'><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.3093732214493!2d7.496347375010599!3d9.035517488886958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b8df484d605%3A0xb6d2b9f842badc00!2sBobsar%20Complex%2C%20Michika%20St%2C%20Garki%2C%20Abuja%20900103%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1713361846216!5m2!1sen!2sng" width="100%" height="100%" style={{ border: '0' }}  loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe></div>
             </div> 
                    <div className='grid xl:grid-cols-[calc(100vw-65rem)_30rem] h-auto w-full gap-x-4  py-10 items-center justify-between font-bold text-black'>
             <div className='flex flex-col py-8 gap-y-10'>
@@ -54,7 +54,7 @@ const page = () => {
                       <div className='flex flex-col sm:flex-row gap-x-2'><div className='text-4xl sm:text-5xl text-amber-950'><FaRegClock/></div><div><p>Monday — Friday</p><p>9:00 AM — 6:00 PM</p></div></div>
               </div>
                               </div>
-            <div className='text-base font-normal h-[12rem] sm:h-[20rem] bg-gray-400 sm:w-[30rem] text-center'><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18691.250150272124!2d6.810825343232106!3d6.081791165936012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1043943fcb55d1b9%3A0x51574dab076a5f1d!2s20%20Onitsha%20-%20Owerri%20Expy%2C%20Onitsha%20434116%2C%20Anambra!5e0!3m2!1sen!2sng!4v1713362138121!5m2!1sen!2sng" width="100%" height="100%" style={{ border: '0' }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div className='text-base font-normal h-[12rem] sm:h-[20rem] bg-gray-400 sm:w-[30rem] text-center'><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18691.250150272124!2d6.810825343232106!3d6.081791165936012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1043943fcb55d1b9%3A0x51574dab076a5f1d!2s20%20Onitsha%20-%20Owerri%20Expy%2C%20Onitsha%20434116%2C%20Anambra!5e0!3m2!1sen!2sng!4v1713362138121!5m2!1sen!2sng" width="100%" height="100%" style={{ border: '0' }}  loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe></div>
             </div> 
                     
                    <div className='grid xl:grid-cols-[calc(100vw-65rem)_30rem] h-auto w-full gap-x-4  py-10 items-center justify-between font-bold text-black'>
@@ -68,7 +68,7 @@ Plot 209 East West Road, Rumuodara, Port Harcourt, Rivers State.</div>
                       <div className='flex flex-col sm:flex-row gap-x-2'><div className='text-4xl sm:text-5xl text-amber-950'><FaRegClock/></div><div><p>Monday — Friday</p><p>9:00 AM — 6:00 PM</p></div></div>
               </div>
                               </div>
-            <div className='text-base font-normal h-[12rem] sm:h-[20rem] bg-gray-400 sm:w-[30rem] text-center'><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.4592880804607!2d7.035101674989645!3d4.862437040234201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069d270c9c1a4ad%3A0x81af39242f1ce0e4!2s209%20E%20-%20W%20Rd%2C%20Rumuodara%2C%20Port%20Harcourt%20500272%2C%20Rivers!5e0!3m2!1sen!2sng!4v1713362212894!5m2!1sen!2sng" width="100%" height="100%" style={{border:'0'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div className='text-base font-normal h-[12rem] sm:h-[20rem] bg-gray-400 sm:w-[30rem] text-center'><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.4592880804607!2d7.035101674989645!3d4.862437040234201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069d270c9c1a4ad%3A0x81af39242f1ce0e4!2s209%20E%20-%20W%20Rd%2C%20Rumuodara%2C%20Port%20Harcourt%20500272%2C%20Rivers!5e0!3m2!1sen!2sng!4v1713362212894!5m2!1sen!2sng" width="100%" height="100%" style={{border:'0'}}  loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe></div>
             </div> 
             </div>
       </div><hr className={styles.container} />

@@ -27,7 +27,7 @@ const Footer = () => {
                         <div className="grid grid-cols-1 gap-x-[8rem] gap-y-16 lg:grid-cols-1">
                             <div>
                                 <p className='flex justify-center font-semibold text-xl mb-5'>Our Offices</p>
-                                <div className='grid grid-cols-2 gap-y-3 gap-x-4 sm:gap-x-10 mb-3 sm:grid-cols-4 w-full text-center text-sm'>
+                                <div className='grid grid-cols-2 gap-y-3 gap-x-4 lg:gap-x-10 mb-3 lg:grid-cols-4 w-full text-center text-sm'>
                                     <div className='flex flex-col gap-x-1 '>
                                         <div className='flex justify-center'><Image src={marker1} alt=''/></div>
                                         <p className='flex justify-center text-lg py-2'>Lagos Island Office</p>
@@ -58,8 +58,8 @@ const Footer = () => {
                                         <p className='flex justify-center'>info@mceastcourt.com</p>
                                     </div>                                </div>
                             </div>
-                            <div className='flex flex-col sm:flex-row  gap-y-16 gap-x-[12rem]  justify-center'>
-                            <nav><ul role="list" className="flex flex-row justify-center sm:justify-start items-center">
+                            <div className='flex flex-col lg:flex-row  gap-y-16 gap-x-[12rem]  justify-center items-center'>
+                            <nav><ul role="list" className="flex flex-row justify-center lg:justify-start items-center">
                                 <li className=''>
                                     <div className="font-display font-semibold text-lg tracking-wider ">Connect with us</div>
                                     <ul role="list" className="mt-4 text-4xl flex flex-row gap-x-4 h-[4rem]">
@@ -116,7 +116,7 @@ const Footer = () => {
                                 </div></div>
                     <div className='flex border-t-2 border-gray-600 h-full py-3 w-full px-3 items-center justify-between'>
                         <p className='text-sm sm:text-base'>&#169; Mbelu Consulting</p>
-                        <p className='text-gray-800'>built by dylexBenji</p>
+                        <p className='text-gray-700'>built by dylexBenji</p>
           </div>
 
             </div>

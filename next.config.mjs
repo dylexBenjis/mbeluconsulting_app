@@ -37,6 +37,41 @@ const nextConfig = {
         hostname: 'mceastcourt.com',
         port: '',
         pathname: '/wp-content/uploads/2021/09/FIABCI.png',
+      },{
+        protocol: 'https',
+        hostname: 'mceastcourt.com',
+        port: '',
+        pathname: '/wp-content/uploads/2021/11/image-19.jpg',
+      },{
+        protocol: 'https',
+        hostname: 'mceastcourt.com',
+        port: '',
+        pathname: '/wp-content/uploads/2024/04/contactbg-calgary.jpg',
+      },{
+        protocol: 'https',
+        hostname: 'mceastcourt.com',
+        port: '',
+        pathname: '/wp-content/uploads/2022/10/Mbelu-e1667262673708-300x300-1.jpeg',
+      },{
+        protocol: 'https',
+        hostname: 'mceastcourt.com',
+        port: '',
+        pathname: '/wp-content/uploads/2023/04/IMG_8388-scaled-e1696548458228.jpg',
+      },{
+        protocol: 'https',
+        hostname: 'mceastcourt.com',
+        port: '',
+        pathname: '/wp-content/uploads/2022/10/image2-1.jpeg',
+      },{
+        protocol: 'https',
+        hostname: 'mceastcourt.com',
+        port: '',
+        pathname: '/wp-content/uploads/2022/10/image1.jpeg',
+      },{
+        protocol: 'https',
+        hostname: 'mceastcourt.com',
+        port: '',
+        pathname: '/wp-content/uploads/2022/10/image4-1.jpeg',
       },
     ],
   },

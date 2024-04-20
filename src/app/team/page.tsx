@@ -15,7 +15,7 @@ const page = () => {
                 </div>
                 <div className='absolute flex items-center h-[10rem] w-full  backdrop-opacity-10 bg-amber-950/90 backdrop-invert '>
                         <div className={styles.container}>
-                            <div className='flex h-full items-center text-4xl font-bold text-white'>Team</div> 
+                            <div className='flex h-full items-center text-4xl font-bold text-white'>Our Leadership</div> 
                         </div>
         </div></div>
                         <div className='flex items-center justify-center h-[auto] w-screen  backdrop-opacity-10 bg-white'>
@@ -24,7 +24,7 @@ const page = () => {
                               <div className='text-amber-950 py-8'>A Company That Cares.</div>
                               <div className='text-base font-normal sm:w-[35rem]'>TEAMWORK – OUR COLLABORATIVE APPROACH IS HELPFUL AND ENCOURAGING WITH A POSITIVE CAN-DO ATTITUDE.</div>
           </div> 
-          <div className='grid grid-cols-1 sm:grid-cols-3 py-10 gap-x-10 gap-y-10 justify-center items-center'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 py-10 gap-x-10 gap-y-10 justify-center items-center'>
                 <div className='flex flex-col h-[35rem] w-full shadow-md border-t-8 border-amber-900 bg-gray-100'>
                     <div className="group relative h-full w-full transform overflow-hidden rounded-4xl  ">
                       <div className="absolute h-[calc(35rem/1.5)] w-full bg-indigo-50 " style={{}}>
@@ -33,7 +33,7 @@ const page = () => {
                     </div>
                     <div className='h-[13rem] w-full bg-gray-100 transition duration-200 text-center p-5'>
                       <h3 className=" font-display text-xl font-bold tracking-tight text-slate-900 ">MBELU ANSELM,</h3>
-                      <p className="text-base tracking-tight text-slate-500 transition duration-300">BSC. ANIVS, RSVBSC. ANIVS, RSV</p>
+                      <p className="text-base tracking-tight text-slate-500 transition duration-300">BSC. ANIVS, RSV ANIVS, RSV</p>
                       <p className="text-base tracking-tight text-slate-500 transition duration-300">Principal Manager</p>
                       <ul role="list" className="mt-1 text-xl flex flex-row gap-x-1 h-[1.5rem] justify-center items-center">
                           <li className="flex w-[1.4rem] justify-center items-center">
@@ -62,16 +62,17 @@ const page = () => {
                     </div>
                     <div className='h-[13rem] w-full bg-gray-100 transition duration-200 text-center p-5'>
                       <h3 className=" font-display text-xl font-bold tracking-tight text-slate-900 ">Ebede Emmanuel Onyinye,</h3>
-                      <p className="text-base tracking-tight text-slate-500 transition duration-300">BSC. ANIVS, RSVBSC. ANIVS, RSV</p>
+                      <p className="text-base tracking-tight text-slate-500 transition duration-300">BSC. ANIVS, RSV ANIVS, RSV</p>
                       <p className="text-base tracking-tight text-slate-500 transition duration-300">Partner</p>
-                      <ul role="list" className="mt-1 text-xl flex flex-row gap-x-1 h-[1.5rem] justify-center items-center">
+                      <p className="text-[12px] tracking-tight text-slate-500 transition duration-300">Strategic: Asset Appraisal and Facility Management</p>
+                      {/* <ul role="list" className="mt-1 text-xl flex flex-row gap-x-1 h-[1.5rem] justify-center items-center">
                           <li className="flex w-[1.4rem] justify-center items-center">
                               <a className="transition hover:text-[1.35rem]" href="/work/family-fund"><FaXTwitter/></a>
                           </li>
                           <li className="flex w-[1.4rem] justify-center items-center">
                               <a className="transition hover:text-[1.35rem]" href="/work/phobia"><FaLinkedin /></a>
                           </li>
-                      </ul>
+                      </ul> */}
                     </div>
                 </div>
                 <div className='flex flex-col h-[35rem] w-full shadow-md border-t-8 border-amber-900 bg-gray-100'>
@@ -84,14 +85,15 @@ const page = () => {
                       <h3 className=" font-display text-xl font-bold tracking-tight text-slate-900 ">EMMANUEL UWAGBOE ABBE,</h3>
                       <p className="text-base tracking-tight text-slate-500 transition duration-300">ANIVS</p>
                       <p className="text-base tracking-tight text-slate-500 transition duration-300">Partner</p>
-                      <ul role="list" className="mt-1 text-xl flex flex-row gap-x-1 h-[1.5rem] justify-center items-center">
+                      <p className="text-[12px] tracking-tight text-slate-500 transition duration-300">Strategic: Property Valuation/ Feasibility and Viability Study</p>
+                      {/* <ul role="list" className="mt-1 text-xl flex flex-row gap-x-1 h-[1.5rem] justify-center items-center">
                           <li className="flex w-[1.4rem] justify-center items-center">
                               <a className="transition hover:text-[1.35rem]" href="/work/family-fund"><FaXTwitter/></a>
                           </li>
                           <li className="flex w-[1.4rem] justify-center items-center">
                               <a className="transition hover:text-[1.35rem]" href="/work/phobia"><FaLinkedin /></a>
                           </li>
-                      </ul>
+                      </ul> */}
                     </div>
                 </div>
                 <div className='flex flex-col h-[35rem] w-full shadow-md border-t-8 border-amber-900 bg-gray-100'>
@@ -104,14 +106,15 @@ const page = () => {
                       <h3 className=" font-display text-xl font-bold tracking-tight text-slate-900 ">KENNETH OBINNA ANIGBO,</h3>
                       <p className="text-base tracking-tight text-slate-500 transition duration-300"></p>
                       <p className="text-base tracking-tight text-slate-500 transition duration-300">Partner</p>
-                      <ul role="list" className="mt-1 text-xl flex flex-row gap-x-1 h-[1.5rem] justify-center items-center">
+                      <p className="text-[12px] tracking-tight text-slate-500 transition duration-300">Strategic: Asset Appraisal, Property Management, Real Estate Marketing and Arbitration</p>
+                      {/* <ul role="list" className="mt-1 text-xl flex flex-row gap-x-1 h-[1.5rem] justify-center items-center">
                           <li className="flex w-[1.4rem] justify-center items-center">
                               <a className="transition hover:text-[1.35rem]" href="/work/family-fund"><FaXTwitter/></a>
                           </li>
                           <li className="flex w-[1.4rem] justify-center items-center">
                               <a className="transition hover:text-[1.35rem]" href="/work/phobia"><FaLinkedin /></a>
                           </li>
-                      </ul>
+                      </ul> */}
                     </div>
                 </div>
                 <div className='flex flex-col h-[35rem] w-full shadow-md border-t-8 border-amber-900 bg-gray-100'>
@@ -124,14 +127,35 @@ const page = () => {
                       <h3 className=" font-display text-xl font-bold tracking-tight text-slate-900 ">UDO ANIEKANABASI,</h3>
                       <p className="text-base tracking-tight text-slate-500 transition duration-300"></p>
                       <p className="text-base tracking-tight text-slate-500 transition duration-300">Building Technologist</p>
-                      <ul role="list" className="mt-1 text-xl flex flex-row gap-x-1 h-[1.5rem] justify-center items-center">
+                      <p className="text-[12px] tracking-tight text-slate-500 transition duration-300">Building Technologist with close to two decades in the building industry.</p>
+                      {/* <ul role="list" className="mt-1 text-xl flex flex-row gap-x-1 h-[1.5rem] justify-center items-center">
                           <li className="flex w-[1.4rem] justify-center items-center">
                               <a className="transition hover:text-[1.35rem]" href="/work/family-fund"><FaXTwitter/></a>
                           </li>
                           <li className="flex w-[1.4rem] justify-center items-center">
                               <a className="transition hover:text-[1.35rem]" href="/work/phobia"><FaLinkedin /></a>
                           </li>
-                      </ul>
+                      </ul> */}
+                    </div>
+                </div>
+                <div className='flex flex-col h-[35rem] w-full shadow-md border-t-8 border-amber-900 bg-gray-100'>
+                    <div className="group relative h-full w-full transform overflow-hidden rounded-4xl  ">
+                      <div className="absolute h-[calc(35rem/1.5)] w-full bg-indigo-50 " style={{}}>
+                        <Image src='https://mceastcourt.com/wp-content/uploads/2024/04/IMG-20240418-WA0000.jpg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
+                      </div>
+                    </div>
+                    <div className='h-[13rem] w-full bg-gray-100 transition duration-200 text-center p-5'>
+                      <h3 className=" font-display text-xl font-bold tracking-tight text-slate-900 ">CHUKWUMA CHIOMA,</h3>
+                      <p className="text-base tracking-tight text-slate-500 transition duration-300">RSV</p>
+                      <p className="text-base tracking-tight text-slate-500 transition duration-300">Property Manager</p>
+                      {/* <ul role="list" className="mt-1 text-xl flex flex-row gap-x-1 h-[1.5rem] justify-center items-center">
+                          <li className="flex w-[1.4rem] justify-center items-center">
+                              <a className="transition hover:text-[1.35rem]" href="/work/family-fund"><FaXTwitter/></a>
+                          </li>
+                          <li className="flex w-[1.4rem] justify-center items-center">
+                              <a className="transition hover:text-[1.35rem]" href="/work/phobia"><FaLinkedin /></a>
+                          </li>
+                      </ul> */}
                     </div>
                 </div>
             </div>

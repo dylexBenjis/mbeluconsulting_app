@@ -72,6 +72,11 @@ const nextConfig = {
         hostname: 'mceastcourt.com',
         port: '',
         pathname: '/wp-content/uploads/2022/10/image4-1.jpeg',
+      },{
+        protocol: 'https',
+        hostname: 'mceastcourt.com',
+        port: '',
+        pathname: '/wp-content/uploads/2024/04/IMG-20240418-WA0000.jpg',
       },
     ],
   },

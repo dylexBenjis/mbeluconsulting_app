@@ -64,7 +64,7 @@ const Footer = () => {
                                     <div className="font-display font-semibold text-lg tracking-wider ">Connect with us</div>
                                     <ul role="list" className="mt-4 text-4xl flex flex-row gap-x-4 h-[4rem]">
                                         <li className="flex mt-4 w-[3.5rem] justify-center items-center">
-                                            <a className="transition hover:text-[2.65rem]" href="/work/family-fund"><FaXTwitter/></a>
+                                            <a className="transition hover:text-[2.65rem]" href="https://x.com/mbeluconsultng" target='_blank'><FaXTwitter/></a>
                                         </li><li className="flex mt-4 w-[3.5rem] justify-center items-center">
                                             <a className="transition hover:text-[2.65rem]" href="/work/unseal"><FaFacebookF /></a>
                                         </li>

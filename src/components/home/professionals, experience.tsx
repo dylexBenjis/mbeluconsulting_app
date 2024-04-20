@@ -9,7 +9,7 @@ import Component_slideUp from '../clientSideComponents/component_slideUp';
 
 const ProfessionalsComponents = () => {
   return (
- <div className='relative h-screen w-screen ' id='professionals'>
+ <div className='relative h-[100svh] w-screen ' id='professionals'>
             <div className="absolute h-screen w-screen -z-1" >
                     <Image src={imagesrc} alt='bgImage' style={{height:'100%',width:'100%', objectFit:'cover'}}/>
             </div>

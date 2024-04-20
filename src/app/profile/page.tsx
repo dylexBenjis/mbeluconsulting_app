@@ -17,7 +17,7 @@ import Infinite_scroll_loop from '@/components/clientSideComponents/infinite_scr
 
 const page = () => {
   return (
-      <div className='relative flex flex-col top-[8.5rem] mb-[12rem] h-auto gap-y-10'>
+      <div className='relative flex flex-col top-[8.5rem] mb-[12rem] h-auto gap-y-10 pb-12'>
             <div className="relative h-[8rem]">
                     <div className='absolute h-full w-full'>
                     <Image src='https://mceastcourt.com/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-15-at-3.27.48-PM.jpeg' alt='' layout='fill' objectFit='cover' />
@@ -62,21 +62,11 @@ Transaction Representation Consultancy among others.</div>
             </div>
             <div className={styles.container} style={{height:'auto', paddingBottom:'2rem'}}>
                   <div className='flex h-auto py-5 text-3xl sm:text-4xl font-semibold text-amber-900 items-center justify-center text-center'>
-                    We&#39;re Proud Members Of these Organizations.
+                    We&#39;re Proud Members Of these Institutions.
                   </div></div>
 
-                  <Infinite_scroll_loop><div className='flex h-[150px] w-[300px] sm:w-[400px] items-center justify-center  grayscale hover:filter-none cursor-pointer'>
-              <Image src='https://mceastcourt.com/wp-content/uploads/2021/09/esvarbon.png' alt='bgImage' objectFit='cover' height= {150} width={400} /></div>
-                     <div className='flex h-[150px] w-[300px] sm:w-[350px] items-center justify-center  grayscale hover:filter-none cursor-pointer '>     
-              <Image src='https://mceastcourt.com/wp-content/uploads/2021/09/CASLE.jpeg' alt='bgImage' objectFit='cover' height= {100} width={350} /></div>
-                     <div className='flex h-[150px] w-[200px] justify-center  grayscale hover:filter-none cursor-pointer '>
-              <Image src='https://mceastcourt.com/wp-content/uploads/2021/09/NIESV.png' alt='bgImage' objectFit='cover' height={200} width={200} /></div>
-            
-            <div className='h-[150px] w-[170px]justify-center flex  grayscale hover:filter-none cursor-pointer '>
-              <Image src='https://mceastcourt.com/wp-content/uploads/2021/09/IDRPN.jpeg' alt='bgImage' objectFit='cover' height= {200} width={200} /></div>
-                      <div className='flex h-[150px] w-[350px]  grayscale hover:filter-none cursor-pointer '>
-              <Image src='https://mceastcourt.com/wp-content/uploads/2021/09/FIABCI.png' alt='bgImage' objectFit='cover' height= {200} width={300}/></div>
-</Infinite_scroll_loop> 
+                  <Infinite_scroll_loop/>
+
 
     </div>
   )

@@ -8,7 +8,7 @@ import Component_slideLeft from '../clientSideComponents/component_slideLeft';
 
 const AboutUs = () => {
   return (
-          <div className='relative h-screen w-screen ' id='aboutUs'>
+          <div className='relative h-[100svh] w-screen ' id='aboutUs'>
             <div className="absolute h-screen w-screen -z-1" >
                     <Image src={imagesrc} alt='bgImage' style={{height:'100%',width:'100%', objectFit:'cover'}}/>
             </div>

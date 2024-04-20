@@ -5,7 +5,7 @@ import styles from "../../app/page.module.css";
 
 const Need_an_appraisal = () => {
   return (
-      <div className='h-screen' id='needAnAppraisal'>
+      <div className='h-[100svh]' id='needAnAppraisal'>
             <div className="flex mx-auto max-w-[1300px] justify-center items-center h-screen">
                 <div className={styles.container}>
                     <Component_FadeIn>

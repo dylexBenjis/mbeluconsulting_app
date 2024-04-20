@@ -1,5 +1,5 @@
 import React from 'react'
-import Component_FadeIn from './clientSideComponents/component_FadeIn';
+import Component_FadeIn from '../clientSideComponents/component_FadeIn';
 import styles from "../../app/page.module.css";
 
 

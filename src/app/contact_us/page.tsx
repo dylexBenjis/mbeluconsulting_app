@@ -3,7 +3,7 @@ import React from 'react'
 import styles from '@/app/page.module.css'
 import { FaQuestion, FaRegClock } from 'react-icons/fa'
 import src1 from '@/images/team1.jpg'
-import FeedbackForm from '@/components/home/clientSideComponents/feedBackForm'
+import FeedbackForm from '@/components/clientSideComponents/feedBackForm'
 
 const page = () => {
   return (

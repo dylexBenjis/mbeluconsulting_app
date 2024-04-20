@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from "../../app/page.module.css";
-import ShowMore_ScrollButton from './clientSideComponents/showMore_ScrollButton';
+import ShowMore_ScrollButton from '../clientSideComponents/showMore_ScrollButton';
 import Image from 'next/image';
 import imagesrc from '../../images/livingroom.webp'
-import Component_slideUp from './clientSideComponents/component_slideUp';
+import Component_slideUp from '../clientSideComponents/component_slideUp';
 
 
 
@@ -13,7 +13,7 @@ const ProfessionalsComponents = () => {
             <div className="absolute h-screen w-screen -z-1" >
                     <Image src={imagesrc} alt='bgImage' style={{height:'100%',width:'100%', objectFit:'cover'}}/>
             </div>
-                <div className='absolute inset-0 backdrop-opacity-10 bg-black/65 backdrop-invert'>
+                <div className='absolute inset-0 backdrop-opacity-10 bg-black/35 backdrop-invert'>
 
           <div className="flex mx-auto max-w-[1300px] justify-center items-center h-screen">
          <Component_slideUp>   

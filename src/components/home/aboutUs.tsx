@@ -2,8 +2,8 @@ import React from 'react'
 import styles from "../../app/page.module.css";
 import imagesrc from '../../images/test.jpg'
 import Image from 'next/image';
-import ShowMore_ScrollButton from './clientSideComponents/showMore_ScrollButton';
-import Component_slideLeft from './clientSideComponents/component_slideLeft';
+import ShowMore_ScrollButton from '../clientSideComponents/showMore_ScrollButton';
+import Component_slideLeft from '../clientSideComponents/component_slideLeft';
 
 
 const AboutUs = () => {

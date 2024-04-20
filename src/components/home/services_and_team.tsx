@@ -3,9 +3,9 @@ import styles from "../../app/page.module.css";
 import Image from 'next/image';
 import src1 from '@/images/heroBg2.jpg'
 import src2 from '@/images/test.jpg'
-import ShowMore_ScrollButton from './clientSideComponents/showMore_ScrollButton';
-import Component_slideLeft from './clientSideComponents/component_slideLeft';
-import Component_slideRight from './clientSideComponents/component_slideRight';
+import ShowMore_ScrollButton from '../clientSideComponents/showMore_ScrollButton';
+import Component_slideLeft from '../clientSideComponents/component_slideLeft';
+import Component_slideRight from '../clientSideComponents/component_slideRight';
 
 const Services_and_team = () => {
   return (

@@ -12,9 +12,9 @@ import heroBg8 from '@/images/heroBg8.jpg';
 import heroBg9 from '@/images/heroBg9.jpg';
 import imagesrc from '../../images/test.jpg'
 import styles from "../../app/page.module.css";
-import ShowMore_ScrollButton from './clientSideComponents/showMore_ScrollButton';
-import Component_FadeIn from './clientSideComponents/component_FadeIn';
-import HeroSectionImageCarousel from './clientSideComponents/HeroSectionImageCarousel';
+import ShowMore_ScrollButton from '../clientSideComponents/showMore_ScrollButton';
+import Component_FadeIn from '../clientSideComponents/component_FadeIn';
+import HeroSectionImageCarousel from '../clientSideComponents/HeroSectionImageCarousel';
 
 
 const HeroSection = () => {

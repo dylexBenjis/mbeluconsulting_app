@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '@/app/page.module.css'
 import Image from 'next/image'
-import Profile_AboutUsSlider from '@/components/home/clientSideComponents/profile_AboutUs_slider'
+import Profile_AboutUsSlider from '@/components/clientSideComponents/profile_AboutUs_slider'
 import heroBg0 from '@/images/heroBg0.jpg';
 import heroBg1 from '@/images/heroBg1.jpg';
 import heroBg2 from '@/images/heroBg2.jpg';
@@ -12,6 +12,7 @@ import heroBg6 from '@/images/heroBg6.jpg';
 import heroBg7 from '@/images/heroBg7.jpg';
 import heroBg8 from '@/images/heroBg8.jpg';
 import heroBg9 from '@/images/heroBg9.jpg';
+import Infinite_scroll_loop from '@/components/clientSideComponents/infinite_scroll_loop';
 
 
 const page = () => {
@@ -62,26 +63,20 @@ Transaction Representation Consultancy among others.</div>
             <div className={styles.container} style={{height:'auto', paddingBottom:'2rem'}}>
                   <div className='flex h-auto py-5 text-3xl sm:text-4xl font-semibold text-amber-900 items-center justify-center text-center'>
                     We&#39;re Proud Members Of these Organizations.
-                  </div>
-              <div className={styles.container}>
-                  <div className='grid grid-cols-[300px] sm:grid-cols-[auto_auto_auto] gap-y-5 h-auto w-full gap-x-7 items-center justify-center justify-items-center'>
-                     <div className='flex h-[120px] sm:h-[150px] w-[300px] sm:w-[400px] items-center justify-center'>
-              <Image src='https://mceastcourt.com/wp-content/uploads/2021/09/esvarbon.png' alt='bgImage' objectFit='cover' height= {150} width={400} /></div>
-                     <div className='flex h-[150px] w-[300px] sm:w-[350px] items-center justify-center'>     
-              <Image src='https://mceastcourt.com/wp-content/uploads/2021/09/CASLE.jpeg' alt='bgImage' objectFit='contain' height= {100} width={350} /></div>
-                     <div className='flex h-[200px] w-[175px] items-center justify-center'>
-              <Image src='https://mceastcourt.com/wp-content/uploads/2021/09/NIESV.png' alt='bgImage' objectFit='cover' height={200} width={200} /></div>
-            </div>
-                  <div className='grid grid-cols-1 sm:grid-cols-[auto_auto] gap-y-10 h-auto w-full gap-x-10 items-center justify-center justify-items-center mt-10 sm:mt-0'>
-         
-            <div className='h-[200px] w-[200px] bg-orange-500'>
-              <Image src='https://mceastcourt.com/wp-content/uploads/2021/09/IDRPN.jpeg' alt='bgImage' objectFit='cover' height= {200} width={200} /></div>
-                      <div className='h-[200px] w-[300px]'>
-              <Image src='https://mceastcourt.com/wp-content/uploads/2021/09/FIABCI.png' alt='bgImage' objectFit='cover' height= {200} width={300} /></div>
+                  </div></div>
 
-                    </div>
-                  </div>
-          </div>
+                  <Infinite_scroll_loop><div className='flex h-[150px] w-[300px] sm:w-[400px] items-center justify-center  grayscale hover:filter-none cursor-pointer'>
+              <Image src='https://mceastcourt.com/wp-content/uploads/2021/09/esvarbon.png' alt='bgImage' objectFit='cover' height= {150} width={400} /></div>
+                     <div className='flex h-[150px] w-[300px] sm:w-[350px] items-center justify-center  grayscale hover:filter-none cursor-pointer '>     
+              <Image src='https://mceastcourt.com/wp-content/uploads/2021/09/CASLE.jpeg' alt='bgImage' objectFit='cover' height= {100} width={350} /></div>
+                     <div className='flex h-[150px] w-[200px] justify-center  grayscale hover:filter-none cursor-pointer '>
+              <Image src='https://mceastcourt.com/wp-content/uploads/2021/09/NIESV.png' alt='bgImage' objectFit='cover' height={200} width={200} /></div>
+            
+            <div className='h-[150px] w-[170px]justify-center flex  grayscale hover:filter-none cursor-pointer '>
+              <Image src='https://mceastcourt.com/wp-content/uploads/2021/09/IDRPN.jpeg' alt='bgImage' objectFit='cover' height= {200} width={200} /></div>
+                      <div className='flex h-[150px] w-[350px]  grayscale hover:filter-none cursor-pointer '>
+              <Image src='https://mceastcourt.com/wp-content/uploads/2021/09/FIABCI.png' alt='bgImage' objectFit='cover' height= {200} width={300}/></div>
+</Infinite_scroll_loop> 
 
     </div>
   )

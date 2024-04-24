@@ -49,14 +49,14 @@ const Appraisal = () => {
                 <form onSubmit={handleSubmit} className='flex flex-col pt-10 pb-10 gap-8 '>
                     
       <div className='flex flex-col  gap-1'>
-        <label htmlFor="contactName" className='font-semibold'>Name : </label>
+        <label htmlFor="Name" className='font-semibold'>Name : </label>
         <input
           type="text"
-          id="contactName"
-          name="contactName"
+          id="Name"
+          name="Name"
           value={formData.contactName}
                             onChange={handleChange}
-                            className='border-b-2 border-amber-700 p-1 bg-gray-200'
+                            className='border-b-2 border-amber-700 p-1 bg-gray-200/30'
         />
                         </div>
                         <div className='flex gap-y-8 gap-x-5 flex-col sm:flex-row'>
@@ -68,7 +68,7 @@ const Appraisal = () => {
           name="contactName"
           value={formData.contactName}
                             onChange={handleChange}
-                            className='border-b-2 border-amber-700 p-1 bg-gray-200'
+                            className='border-b-2 border-amber-700 p-1 bg-gray-200/30'
         />
                     </div>
 
@@ -80,7 +80,7 @@ const Appraisal = () => {
           name="phoneNumber"
           value={formData.phoneNumber}
           onChange={handleChange}
-                            className='border-b-2 border-amber-700 p-1 bg-gray-200'
+                            className='border-b-2 border-amber-700 p-1 bg-gray-200/30'
         />
       </div></div>
       <div className='flex flex-col  '>
@@ -91,7 +91,7 @@ const Appraisal = () => {
           name="address"
           value={formData.address}
           onChange={handleChange}
-                            className='border-b-2 border-amber-700 p-1 bg-gray-200'
+                            className='border-b-2 border-amber-700 p-1 bg-gray-200/30'
         />
       </div>
       <div className='flex flex-col  '>
@@ -101,7 +101,7 @@ const Appraisal = () => {
           name="assetDescription"
           value={formData.assetDescription}
           onChange={handleChange}
-                            className='border-b-2 border-amber-700 p-1 bg-gray-200 h-[150px] sm:h-[300px]'
+                            className='border-b-2 border-amber-700 p-1 bg-gray-200/30 h-[150px] sm:h-[300px]'
         />
       </div>
       <div className='flex flex-col  '>
@@ -112,7 +112,7 @@ const Appraisal = () => {
           name="valuationPurpose"
           value={formData.valuationPurpose}
           onChange={handleChange}
-                            className='border-b-2 border-amber-700 p-1 bg-gray-200'
+                            className='border-b-2 border-amber-700 p-1 bg-gray-200/30'
         />
       </div>
       <div className='flex flex-col '>
@@ -123,7 +123,7 @@ const Appraisal = () => {
           name="title"
           value={formData.title}
           onChange={handleChange}
-                            className='border-b-2 border-amber-700 p-1  bg-gray-200'
+                            className='border-b-2 border-amber-700 p-1  bg-gray-200/30'
         />
       </div>
       {/* <div>

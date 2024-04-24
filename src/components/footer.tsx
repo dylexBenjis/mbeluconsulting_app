@@ -66,16 +66,16 @@ const Footer = () => {
                                         <li className="flex mt-4 w-[3.5rem] justify-center items-center">
                                             <a className="transition hover:text-[2.65rem]" href="https://x.com/mbeluconsultng" target='_blank'><FaXTwitter/></a>
                                         </li><li className="flex mt-4 w-[3.5rem] justify-center items-center">
-                                            <a className="transition hover:text-[2.65rem]" href="/work/unseal"><FaFacebookF /></a>
+                                            <a className="transition hover:text-[2.65rem]" href="https://facebook.com/eastcourt"><FaFacebookF /></a>
                                         </li>
                                         <li className="flex mt-4 w-[3.5rem] justify-center items-center">
-                                            <a className="transition hover:text-[2.65rem]" href="/work/phobia"><FaLinkedin /></a>
+                                            <a className="transition hover:text-[2.65rem]" href="https://linkedin.com/company/mbelu-consulting-estate-surveyours-and-valuers"><FaLinkedin /></a>
                                         </li>
                                         <li className="flex mt-4 w-[3.5rem] justify-center items-center">
-                                            <a className="transition hover:text-[2.65rem]" href="/work"><FaSquareInstagram /></a>
+                                            <a className="transition hover:text-[2.65rem]" href=""><FaSquareInstagram /></a>
                                         </li>
                                         <li className="flex mt-4 w-[3.5rem] justify-center items-center">
-                                            <a className="transition hover:text-[2.65rem]" href="/work"><FaWhatsapp/></a>
+                                            <a className="transition hover:text-[2.65rem]" href=""><FaWhatsapp/></a>
                                         </li>
                                     </ul>
                                 </li>

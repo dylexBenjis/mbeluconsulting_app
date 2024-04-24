@@ -50,7 +50,7 @@ const NavBar = () => {
               <Image src={mbeluConsulting_Logo} alt='mbeluConsulting logo' style={{transform:scrolled?'scale(1)':'scale(1.2)', transition:scrolled?'0.1s ease-in-out':'0.1s 0.6s'}} className='h-[3rem] w-[5.25rem] sm:h-[6em] sm:w-[10.5rem]'/>
             </a>
             <div className="flex items-center gap-x-3 sm:gap-x-8">
-              <a className="inline-flex px-2 py-2 text-[10px] sm:px-4 sm:py-4 sm:text-sm font-semibold border-black border-2 transition hover:bg-neutral-800" href="/contact" style={{borderColor:scrolled||menuOpen?'':'grey', transition:scrolled||menuOpen?(scrolled?(menuOpen?'all 0.3s ease-in-out':'all 0.3s ease'):(menuOpen?'all 0.3s ease':'')):(menuOpen?'all 0.3s ease':'all 0.5s 0.5s')}}>
+              <a className="inline-flex px-2 py-2 text-[10px] sm:px-4 sm:py-4 sm:text-sm font-semibold border-black border-2 transition hover:bg-neutral-800" href="/appraisal" style={{borderColor:scrolled||menuOpen?'':'grey', transition:scrolled||menuOpen?(scrolled?(menuOpen?'all 0.3s ease-in-out':'all 0.3s ease'):(menuOpen?'all 0.3s ease':'')):(menuOpen?'all 0.3s ease':'all 0.5s 0.5s')}}>
                 <span className="relative top-px" style={{color:scrolled||menuOpen?'':'grey', transition:scrolled||menuOpen?(scrolled?(menuOpen?'all 0.3s ease-in-out':'all 0.3s ease'):(menuOpen?'all 0.3s ease':'')):(menuOpen?'all 0.3s ease':'all 0.5s 0.5s')}}>ORDER FOR AN APPRAISAL</span>
               </a>
                 {menuOpen ?

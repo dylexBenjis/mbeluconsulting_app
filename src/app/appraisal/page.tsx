@@ -5,7 +5,8 @@ import styles from '@/app/page.module.css'
 
 const Appraisal = () => {
 
-  const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState({
+      Name:'',
     contactName: '',
     phoneNumber: '',
     address: '',
@@ -29,7 +30,8 @@ const Appraisal = () => {
     // Handle form submission here, you can send formData to your backend or process it as needed
     console.log(formData);
     // Reset form data after submission if needed
-    setFormData({
+      setFormData({
+        Name:'',
       contactName: '',
       phoneNumber: '',
       address: '',
@@ -54,7 +56,7 @@ const Appraisal = () => {
           type="text"
           id="Name"
           name="Name"
-          value={formData.contactName}
+          value={formData.Name}
                             onChange={handleChange}
                             className='border-b-2 border-amber-700 p-1 bg-gray-200/30'
         />
@@ -101,7 +103,7 @@ const Appraisal = () => {
           name="assetDescription"
           value={formData.assetDescription}
           onChange={handleChange}
-                            className='border-b-2 border-amber-700 p-1 bg-gray-200/30 h-[150px] sm:h-[300px]'
+                            className='border-b-2 border-amber-700 p-2 bg-gray-200/30 h-[150px] sm:h-[300px]'
         />
       </div>
       <div className='flex flex-col  '>
@@ -146,7 +148,12 @@ const Appraisal = () => {
           onChange={handleChange}
         />
       </div> */}
-                        <button type="submit">Submit</button>
+                              <div className='flex justify-center items-center'>  <button
+          type="submit"
+          className="flex  bg-amber-950 hover:bg-gray-600 hover:scale-110 text-white font-semibold py-2 px-4 rounded-md"
+        >
+          Submit
+        </button></div>
                        
                 </form> </div>
                 <hr/>

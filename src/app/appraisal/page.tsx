@@ -73,7 +73,7 @@ const Appraisal = () => {
                     </div>
 
       <div className='flex flex-col gap-1 '>
-        <label htmlFor="phoneNumber" className='font-semibold'>Contact's phone number : </label>
+        <label htmlFor="phoneNumber" className='font-semibold'>Contact&#39;s phone number : </label>
         <input
           type="tel"
           id="phoneNumber"

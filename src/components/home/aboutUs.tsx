@@ -23,7 +23,7 @@ const AboutUs = () => {
         <p className='text-base/7 sm:text-lg/10 text-center'>
           Mbelu Consulting is a firm of Chartered Estate Surveyors and Valuers with track records in providing excellent knowledge based real estate services such as property valuations for all purposes, property investment appraisal, and advisory services.          
         </p>
-      <a className="inline-flex px-4 py-4 text-sm font-semibold border-black border-2 transition hover:bg-neutral-800" href="/contact">
+      <a className="inline-flex px-4 py-4 text-sm font-semibold border-black border-2 transition hover:bg-neutral-800" href="/profile">
         <span className="relative top-px">View Our Profile</span>
           </a>
           </div>

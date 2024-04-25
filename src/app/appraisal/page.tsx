@@ -1,12 +1,13 @@
 'use client'
 import React, { useState } from 'react';
 import styles from '@/app/page.module.css'
+import { handler } from '@/actions/actions';
 
 
 const Appraisal = () => {
 
     const [formData, setFormData] = useState({
-      Name:'',
+    name:'',
     contactName: '',
     phoneNumber: '',
     address: '',
@@ -25,38 +26,44 @@ const Appraisal = () => {
     });
   };
 
-  const handleSubmit = (e: { preventDefault: () => void; }) => {
-    e.preventDefault();
-    // Handle form submission here, you can send formData to your backend or process it as needed
+  const handleSubmit = async (formData: FormData) => {
+        try {
+      const response = await handler(formData);
+    } catch (error) {
+      console.error('Form submission failed:', error);
+    }
     console.log(formData);
     // Reset form data after submission if needed
       setFormData({
-        Name:'',
-      contactName: '',
-      phoneNumber: '',
-      address: '',
-      assetDescription: '',
-      valuationPurpose: '',
-      title: '',
-      invoice: '',
-      inventory: ''
+        name:'',
+        contactName: '',
+        phoneNumber: '',
+        address: '',
+        assetDescription: '',
+        valuationPurpose: '',
+        title: '',
+        invoice: '',
+        inventory: ''
     });
   };
 
+    
+    
+    
     return (
         <div className='mt-[5rem] sm:mt-[7rem] pb-[10rem] pt-[3rem] w-screen sm:text-lg '>
             <div className={styles.container}>
                 <div className='flex justify-center items-center p-3 text-2xl font-bold'>Appraisal Form</div><hr/>
                 <div className='w-full flex justify-center items-center'>
-                <form onSubmit={handleSubmit} className='flex flex-col pt-10 pb-10 gap-8 '>
+                    <form action={formData => { handleSubmit(formData) }} className='flex flex-col pt-10 pb-10 gap-8 '>
                     
       <div className='flex flex-col  gap-1'>
-        <label htmlFor="Name" className='font-semibold'>Name : </label>
+        <label htmlFor="name" className='font-semibold'>Name : </label>
         <input
           type="text"
-          id="Name"
-          name="Name"
-          value={formData.Name}
+          id="name"
+          name="name"
+          value={formData.name}
                             onChange={handleChange}
                             className='border-b-2 border-amber-700 p-1 bg-gray-200/30'
         />
@@ -120,7 +127,8 @@ const Appraisal = () => {
       <div className='flex flex-col '>
         <label htmlFor="title" className='font-semibold'>Title/ Invoice/ Inventory : </label>
         <input
-          type="text"
+          type="file"
+          multiple
           id="title"
           name="title"
           value={formData.title}

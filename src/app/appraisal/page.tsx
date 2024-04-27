@@ -1,21 +1,23 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useEffect,  useState } from 'react';
 import styles from '@/app/page.module.css'
 import { handler } from '@/actions/actions';
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+import './toast.css'
+
+const Appraisal: React.FC = () => {
 
 
-const Appraisal = () => {
-
-    const [formData, setFormData] = useState({
-    name:'',
+  const [formData, setFormData] = useState({
+    name: '',
     contactName: '',
     phoneNumber: '',
+    email: '',
     address: '',
     assetDescription: '',
     valuationPurpose: '',
-    title: '',
-    invoice: '',
-    inventory: ''
+    title: ''
   });
 
   const handleChange = (e: { target: { name: any; value: any; }; }) => {
@@ -26,42 +28,68 @@ const Appraisal = () => {
     });
   };
 
-  const handleSubmit = async (formData: FormData) => {
-        try {
+  const notify = () => toast.success(responseValue, {
+    style: {
+      
+    },
+    icon: false,
+  })
+  
+  const [submitting, setSubmitting] = useState(false);
+  const [responseValue, setResponse] = useState('');
+  const [responseToast, setResponseToast] = useState(false);
+
+  useEffect(() => { console.log(submitting) }, [submitting])
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget as HTMLFormElement)
+    try {
+      setSubmitting(true)
+      console.log(submitting, 'entered')
       const response = await handler(formData);
+      console.log('waited for:', response)
+      // Reset form data after submission if needed
+      if (response) {
+        setResponseToast(true);
+        setResponse(response);
+        notify();
+        setFormData({
+          name: '',
+          contactName: '',
+          phoneNumber: '',
+          email: '',
+          address: '',
+          assetDescription: '',
+          valuationPurpose: '',
+          title: ''
+        });
+        setSubmitting(false)
+      }
     } catch (error) {
       console.error('Form submission failed:', error);
     }
-    console.log(formData);
-    // Reset form data after submission if needed
-      setFormData({
-        name:'',
-        contactName: '',
-        phoneNumber: '',
-        address: '',
-        assetDescription: '',
-        valuationPurpose: '',
-        title: '',
-        invoice: '',
-        inventory: ''
-    });
+
+
   };
+
 
     
     
     
-    return (
-        <div className='mt-[5rem] sm:mt-[7rem] pb-[10rem] pt-[3rem] w-screen sm:text-lg '>
+  return (
+
+    <div className='mt-[5rem] sm:mt-[7rem] pb-[10rem] pt-[3rem] w-screen sm:text-lg text-black'>
+      <ToastContainer position='bottom-right' autoClose={2500}/>
             <div className={styles.container}>
                 <div className='flex justify-center items-center p-3 text-2xl font-bold'>Appraisal Form</div><hr/>
                 <div className='w-full flex justify-center items-center'>
-                    <form action={formData => { handleSubmit(formData) }} className='flex flex-col pt-10 pb-10 gap-8 '>
-                    
+            <form onSubmit={e => { setSubmitting(true); handleSubmit(e)}} className='flex flex-col pt-10 pb-10 gap-8 '>                  
       <div className='flex flex-col  gap-1'>
         <label htmlFor="name" className='font-semibold'>Name : </label>
         <input
           type="text"
           id="name"
+          required
           name="name"
           value={formData.name}
                             onChange={handleChange}
@@ -74,6 +102,7 @@ const Appraisal = () => {
         <input
           type="text"
           id="contactName"
+          required
           name="contactName"
           value={formData.contactName}
                             onChange={handleChange}
@@ -86,12 +115,25 @@ const Appraisal = () => {
         <input
           type="tel"
           id="phoneNumber"
+          required
           name="phoneNumber"
           value={formData.phoneNumber}
           onChange={handleChange}
                             className='border-b-2 border-amber-700 p-1 bg-gray-200/30'
         />
-      </div></div>
+                </div></div>
+                    <div className='flex flex-col  gap-1'>
+        <label htmlFor="contactName" className='font-semibold'>Email : </label>
+        <input
+          type="email"
+          id="email"
+          required
+          name="email"
+          value={formData.email}
+                            onChange={handleChange}
+                            className='border-b-2 border-amber-700 p-1 bg-gray-200/30'
+        />
+                    </div>
       <div className='flex flex-col  '>
         <label htmlFor="address" className='font-semibold'>Address of Asset : </label>
         <input
@@ -107,6 +149,7 @@ const Appraisal = () => {
         <label htmlFor="assetDescription" className='font-semibold'>Description of Asset : </label>
         <textarea
           id="assetDescription"
+          required
           name="assetDescription"
           value={formData.assetDescription}
           onChange={handleChange}
@@ -118,12 +161,13 @@ const Appraisal = () => {
         <input
           type="text"
           id="valuationPurpose"
+          required
           name="valuationPurpose"
           value={formData.valuationPurpose}
           onChange={handleChange}
                             className='border-b-2 border-amber-700 p-1 bg-gray-200/30'
         />
-      </div>
+      </div> 
       <div className='flex flex-col '>
         <label htmlFor="title" className='font-semibold'>Title/ Invoice/ Inventory : </label>
         <input
@@ -136,35 +180,16 @@ const Appraisal = () => {
                             className='border-b-2 border-amber-700 p-1  bg-gray-200/30'
         />
       </div>
-      {/* <div>
-        <label htmlFor="invoice">Invoice : </label>
-        <input
-          type="text"
-          id="invoice"
-          name="invoice"
-          value={formData.invoice}
-          onChange={handleChange}
-        />
-      </div>
-      <div>
-        <label htmlFor="inventory">Inventory:</label>
-        <input
-          type="text"
-          id="inventory"
-          name="inventory"
-          value={formData.inventory}
-          onChange={handleChange}
-        />
-      </div> */}
                               <div className='flex justify-center items-center'>  <button
-          type="submit"
-          className="flex  bg-amber-950 hover:bg-gray-600 hover:scale-110 text-white font-semibold py-2 px-4 rounded-md"
-        >
-          Submit
+                type="submit"
+                disabled={submitting}
+                className="flex  bg-amber-950 hover:scale-110 text-white font-semibold py-2 px-4 rounded-md"
+                >
+                {submitting ? 'Submitting...' : 'Submit'}
         </button></div>
-                       
+
                 </form> </div>
-                <hr/>
+                <hr/>    
     </div>
     </div>
   )

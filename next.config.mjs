@@ -51,7 +51,7 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'mceastcourt.com',
         port: '',
-        pathname: '/wp-content/uploads/2022/10/Mbelu-e1667262673708-300x300-1.jpeg',
+        pathname: '/wp-content/uploads/2024/04/IMG-20240421-WA0000.jpg',
       },{
         protocol: 'https',
         hostname: 'mceastcourt.com',

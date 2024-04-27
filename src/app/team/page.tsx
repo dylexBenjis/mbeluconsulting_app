@@ -28,27 +28,27 @@ const page = () => {
                 <div className='flex flex-col h-[35rem] w-full shadow-md border-t-8 border-amber-900 bg-gray-100'>
                     <div className="group relative h-full w-full transform overflow-hidden rounded-4xl  ">
                       <div className="absolute h-[calc(35rem/1.5)] w-full bg-indigo-50 " style={{}}>
-                        <Image src='https://mceastcourt.com/wp-content/uploads/2022/10/Mbelu-e1667262673708-300x300-1.jpeg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
+                        <Image src='https://mceastcourt.com/wp-content/uploads/2024/04/IMG-20240421-WA0000.jpg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
                       </div>
                     </div>
                     <div className='h-[13rem] w-full bg-gray-100 transition duration-200 text-center p-5'>
                       <h3 className=" font-display text-xl font-bold tracking-tight text-slate-900 ">MBELU ANSELM,</h3>
-                      <p className="text-base tracking-tight text-slate-500 transition duration-300">BSC. ANIVS, RSV ANIVS, RSV</p>
+                      <p className="text-base tracking-tight text-slate-500 transition duration-300">BSC., ANIVS, RSV</p>
                       <p className="text-base tracking-tight text-slate-500 transition duration-300">Principal Manager</p>
                       <ul role="list" className="mt-1 text-xl flex flex-row gap-x-1 h-[1.5rem] justify-center items-center">
                           <li className="flex w-[1.4rem] justify-center items-center">
-                              <a className="transition hover:text-[1.35rem]" href="/work/family-fund"><FaXTwitter/></a>
+                              <a className="transition hover:text-[1.35rem]" href="/"><FaXTwitter/></a>
                           </li><li className="flex w-[1.4rem] justify-center items-center">
-                              <a className="transition hover:text-[1.35rem]" href="/work/unseal"><FaFacebookF /></a>
+                              <a className="transition hover:text-[1.35rem]" href="https://www.facebook.com/mbelu.ndubuisi"><FaFacebookF /></a>
                           </li>
                           <li className="flex w-[1.4rem] justify-center items-center">
-                              <a className="transition hover:text-[1.35rem]" href="/work/phobia"><FaLinkedin /></a>
+                              <a className="transition hover:text-[1.35rem]" href="https://www.linkedin.com/in/ndubuisi-mbelu-anisv-rsv-a9a90483"><FaLinkedin /></a>
                           </li>
                           <li className="flex w-[1.4rem] justify-center items-center">
-                              <a className="transition hover:text-[1.35rem]" href="/work"><FaSquareInstagram /></a>
+                              <a className="transition hover:text-[1.35rem]" href="https://www.instagram.com/mbelundubuisi?igsh=MWMOeDNzeWg2NGlrdA=="><FaSquareInstagram /></a>
                           </li>
                           <li className="flex w-[1.4rem] justify-center items-center">
-                              <a className="transition hover:text-[1.35rem]" href="/work"><FaWhatsapp/></a>
+                              <a className="transition hover:text-[1.35rem]" href="https://wa.me/08034337148"><FaWhatsapp/></a>
                           </li>
                       </ul>
                     </div>
@@ -62,7 +62,7 @@ const page = () => {
                     </div>
                     <div className='h-[13rem] w-full bg-gray-100 transition duration-200 text-center p-5'>
                       <h3 className=" font-display text-xl font-bold tracking-tight text-slate-900 ">Ebede Emmanuel Onyinye,</h3>
-                      <p className="text-base tracking-tight text-slate-500 transition duration-300">BSC. ANIVS, RSV ANIVS, RSV</p>
+                      <p className="text-base tracking-tight text-slate-500 transition duration-300">BSC. , RSV, ANIVS</p>
                       <p className="text-base tracking-tight text-slate-500 transition duration-300">Partner</p>
                       <p className="text-[12px] tracking-tight text-slate-500 transition duration-300">Strategic: Asset Appraisal and Facility Management</p>
                       {/* <ul role="list" className="mt-1 text-xl flex flex-row gap-x-1 h-[1.5rem] justify-center items-center">
@@ -97,7 +97,7 @@ const page = () => {
                     </div>
                 </div>
                 <div className='flex flex-col h-[35rem] w-full shadow-md border-t-8 border-amber-900 bg-gray-100'>
-                    <div className="group relative h-full w-full transform overflow-hidden rounded-4xl  ">
+                    <div className="group relative h-full w-full transform overflow-hidden rounded-4xl">
                       <div className="absolute h-[calc(35rem/1.5)] w-full bg-indigo-50 " style={{}}>
                         <Image src='https://mceastcourt.com/wp-content/uploads/2022/10/image1.jpeg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
                       </div>
@@ -107,27 +107,6 @@ const page = () => {
                       <p className="text-base tracking-tight text-slate-500 transition duration-300"></p>
                       <p className="text-base tracking-tight text-slate-500 transition duration-300">Partner</p>
                       <p className="text-[12px] tracking-tight text-slate-500 transition duration-300">Strategic: Asset Appraisal, Property Management, Real Estate Marketing and Arbitration</p>
-                      {/* <ul role="list" className="mt-1 text-xl flex flex-row gap-x-1 h-[1.5rem] justify-center items-center">
-                          <li className="flex w-[1.4rem] justify-center items-center">
-                              <a className="transition hover:text-[1.35rem]" href="/work/family-fund"><FaXTwitter/></a>
-                          </li>
-                          <li className="flex w-[1.4rem] justify-center items-center">
-                              <a className="transition hover:text-[1.35rem]" href="/work/phobia"><FaLinkedin /></a>
-                          </li>
-                      </ul> */}
-                    </div>
-                </div>
-                <div className='flex flex-col h-[35rem] w-full shadow-md border-t-8 border-amber-900 bg-gray-100'>
-                    <div className="group relative h-full w-full transform overflow-hidden rounded-4xl  ">
-                      <div className="absolute h-[calc(35rem/1.5)] w-full bg-indigo-50 " style={{}}>
-                        <Image src='https://mceastcourt.com/wp-content/uploads/2022/10/image4-1.jpeg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
-                      </div>
-                    </div>
-                    <div className='h-[13rem] w-full bg-gray-100 transition duration-200 text-center p-5'>
-                      <h3 className=" font-display text-xl font-bold tracking-tight text-slate-900 ">UDO ANIEKANABASI,</h3>
-                      <p className="text-base tracking-tight text-slate-500 transition duration-300"></p>
-                      <p className="text-base tracking-tight text-slate-500 transition duration-300">Building Technologist</p>
-                      <p className="text-[12px] tracking-tight text-slate-500 transition duration-300">Building Technologist with close to two decades in the building industry.</p>
                       {/* <ul role="list" className="mt-1 text-xl flex flex-row gap-x-1 h-[1.5rem] justify-center items-center">
                           <li className="flex w-[1.4rem] justify-center items-center">
                               <a className="transition hover:text-[1.35rem]" href="/work/family-fund"><FaXTwitter/></a>
@@ -158,6 +137,27 @@ const page = () => {
                       </ul> */}
                     </div>
                 </div>
+                <div className='flex flex-col h-[35rem] w-full shadow-md border-t-8 border-amber-900 bg-gray-100'>
+                    <div className="group relative h-full w-full transform overflow-hidden rounded-4xl  ">
+                      <div className="absolute h-[calc(35rem/1.5)] w-full bg-indigo-50 " style={{}}>
+                        <Image src='https://mceastcourt.com/wp-content/uploads/2022/10/image4-1.jpeg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
+                      </div>
+                    </div>
+                    <div className='h-[13rem] w-full bg-gray-100 transition duration-200 text-center p-5'>
+                      <h3 className=" font-display text-xl font-bold tracking-tight text-slate-900 ">UDO ANIEKANABASI,</h3>
+                      <p className="text-base tracking-tight text-slate-500 transition duration-300"></p>
+                      <p className="text-base tracking-tight text-slate-500 transition duration-300">Building Technologist</p>
+                      <p className="text-[12px] tracking-tight text-slate-500 transition duration-300">Building Technologist with close to two decades in the building industry.</p>
+                      {/* <ul role="list" className="mt-1 text-xl flex flex-row gap-x-1 h-[1.5rem] justify-center items-center">
+                          <li className="flex w-[1.4rem] justify-center items-center">
+                              <a className="transition hover:text-[1.35rem]" href="/work/family-fund"><FaXTwitter/></a>
+                          </li>
+                          <li className="flex w-[1.4rem] justify-center items-center">
+                              <a className="transition hover:text-[1.35rem]" href="/work/phobia"><FaLinkedin /></a>
+                          </li>
+                      </ul> */}
+                </div>
+              </div>
             </div>
           </div>
         </div>

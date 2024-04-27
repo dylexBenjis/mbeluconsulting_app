@@ -33,6 +33,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.1.4",
     "postcss": "^8.4.38",
+    "react-toastify": "^10.0.5",
     "tailwindcss": "^3.4.3",
     "typescript": "^5"
   }

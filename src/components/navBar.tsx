@@ -51,7 +51,7 @@ const NavBar = () => {
             </a>
             <div className="flex items-center gap-x-3 sm:gap-x-8">
               <a className="inline-flex px-2 py-2 text-[10px] sm:px-4 sm:py-4 sm:text-sm font-semibold border-black border-2 transition hover:bg-neutral-800" href="/appraisal" style={{borderColor:scrolled||menuOpen?'':'grey', transition:scrolled||menuOpen?(scrolled?(menuOpen?'all 0.3s ease-in-out':'all 0.3s ease'):(menuOpen?'all 0.3s ease':'')):(menuOpen?'all 0.3s ease':'all 0.5s 0.5s')}}>
-                <span className="relative top-px" style={{color:scrolled||menuOpen?'':'grey', transition:scrolled||menuOpen?(scrolled?(menuOpen?'all 0.3s ease-in-out':'all 0.3s ease'):(menuOpen?'all 0.3s ease':'')):(menuOpen?'all 0.3s ease':'all 0.5s 0.5s')}}>ORDER FOR AN APPRAISAL</span>
+                <span className="relative top-px" style={{color:scrolled||menuOpen?'':'grey', transition:scrolled||menuOpen?(scrolled?(menuOpen?'all 0.3s ease-in-out':'all 0.3s ease'):(menuOpen?'all 0.3s ease':'')):(menuOpen?'all 0.3s ease':'all 0.5s 0.5s')}}>REQUEST FOR AN APPRAISAL</span>
               </a>
                 {menuOpen ?
                   <button type="button" aria-expanded="true" aria-controls=":R5a:" className="group -m-2.5 rounded-full p-2.5 transition hover:bg-white/10" aria-label="Toggle navigation" onClick={handleMenu}>

@@ -14,7 +14,7 @@ const Need_an_appraisal = () => {
                             <p className='mb-3'>you&#39;re just a few clicks away.<br/>
                             Simply proceed to our appraisal order form and we&#39;ll be in touch.</p>
                             <a className="inline-flex px-4 py-4 text-sm font-semibold border-black border-2 transition hover:bg-neutral-800" href="/appraisal">
-                                <span className="relative top-px">ORDER FOR AN APPRAISAL</span>
+                                <span className="relative top-px">REQUEST FOR AN APPRAISAL</span>
                             </a>
                       </div>
                     </Component_FadeIn>

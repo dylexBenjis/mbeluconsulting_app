@@ -2,84 +2,94 @@
 
 import nodemailer from 'nodemailer';
 import {put} from '@vercel/blob'
-import { NextResponse } from 'next/server';
 
-async function uploadDocs(a:any) {
-  const title = a;
-  if (title) {
-    
 
-  // Send POST request to WordPress media endpoint
-  const response = await fetch('http://mceastcourt.com/wp-json/wp/v2/media', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      // 'Authorization': 'Bearer your-access-token' // Add authorization header if required
-    },
-    body: JSON.stringify({
-      file: title // File data
-    })
-  });
 
-  // Handle response from WordPress
-  const data = await response.json();
-  console.log(data)
-
-    console.log(title)
+export async function PUT(title: any){
+try {  const blob = await put(title.name, title, { access: 'public' });
+ 
+    return blob;
+  }
+catch(error) {
+  console.log(error)
   }
 }
 
-export async function PUT(request: FormData): Promise<NextResponse> {
-  const file = request.get('title') as File;
-  const blob = await put(file.name, file, { access: 'public' });
- 
-  return NextResponse.json(blob);
-}
 
 export async function handler(formData: FormData) {
+  console.log('entered')
+  
+  var newArray: any=[]
+  const name = formData.get('name');
+  const contactName = formData.get('contactName');
+  const phoneNumber = formData.get('phoneNumber');
+  const address = formData.get('address');
+  const email = formData.get('email');
+  const assetDescription = formData.get('assetDescription');
+  const valuationPurpose = formData.get('valuationPurpose');
 
-  const titleUrl = await PUT(formData);
-  console.log(titleUrl)
- 
-  //   console.log(formData)
-  //   const name = formData.get('name');
-  //   const contactName = formData.get('contactName');
-  //   const phoneNumber = formData.get('phoneNumber');
-  //   const address = formData.get('address');
+  //return value;
+  var handlerReturn;
 
-    
-  //   // Validate form data (optional)
 
-  //   // Create a transporter using nodemailer
-  //   const transporter = nodemailer.createTransport({
-  //     // Configure your email provider settings here
-  //       // Example: SMTP transport
+try{
+  var filename: Array<string> = []
+  var pathname: Array<string> = []
+  const files = formData.getAll('title')
+  for(const file of files) {
+    const response: any = await PUT(file)
+    pathname.push(response.url)
+    filename.push(`${name}` + ' ' + response.pathname)
+    console.log('response:', response, 'ArrayResponse:', filename, pathname)
+  }
+  newArray = filename.map((file:string, index:number) => ({
+  filename: file,
+  path: pathname[index]
+}));
+    console.log('line70:', newArray)
+  
+} catch(er) {
+  }
 
-  //     host: 'mail.mceastcourt.com',
-  //     port: 465,
-  //     secure: true,
-  //     auth: {
-  //       user: 'test@mceastcourt.com',
-  //       pass: '?%Y)AkZmOMN9'
-  //     },
-  //   });
-  //   transporter.verify(function (error, success) {
-  //       if (error) {
-  //           console.log(error)
-  //       }else{console.log('connected')}
-  //   })
+    // Validate form data (optional)
 
-  //       // Send mail with defined transport object
-  // try {
-  //   const info = await transporter.sendMail({
-  //     from: '"MbeluConsulting" <test@mceastcourt.com>',
-  //     to: 'benjichukwudile@gmail.com',
-  //     subject: 'New Form Submission',
-  //     text: `Name: ${name}\nEmail: ${name}\nMessage: ${contactName}`,
-  //   });
+    // Create a transporter using nodemailer
+    const transporter = nodemailer.createTransport({
+      // Configure your email provider settings here
+        // Example: SMTP transport
 
-  //       console.log('Message sent: %s', info.messageId);
-  //   }
-  //   catch(error){console.log(error)}
+      host: 'mail.mceastcourt.com',
+      port: 465,
+      secure: true,
+      auth: {
+        user: 'test@mceastcourt.com',
+        pass: '?%Y)AkZmOMN9'
+      },
+    });
+    transporter.verify(function (error, success) {
+        if (error) {
+            console.log(error)
+        }else{console.log('connected')}
+    })
 
+        // Send mail with defined transport object
+  try {
+
+    const info = await transporter.sendMail({
+      from: '"MbeluConsulting" <test@mceastcourt.com>',
+      to: ['benjichukwudile@gmail.com',],
+      cc: '',
+      subject: 'New Appraisal Form Submission',
+      text: `Full Name:\n${name}\n\nContactName:\n${contactName}\n\nPhone Number:\n${phoneNumber}\n\nEmail:\n${email}\n\n\nValuation Purpose:\n${valuationPurpose}\n\nAsset Description:\n${assetDescription}\n\nLocation:\n${address}`,
+      attachments: newArray
+    });
+
+      handlerReturn = 'Appraisal sent'
+
+
+        console.log('Email sent: %s', info.messageId, info, handlerReturn);
+    }
+  catch (error) { console.log(error);  handlerReturn='Appraisal not sent'}
+
+  return handlerReturn;
 }

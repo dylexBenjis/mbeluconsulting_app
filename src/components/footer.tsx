@@ -66,16 +66,16 @@ const Footer = () => {
                                         <li className="flex mt-4 w-[3.5rem] justify-center items-center">
                                             <a className="transition hover:text-[2.65rem]" href="https://x.com/mbeluconsultng" target='_blank'><FaXTwitter/></a>
                                         </li><li className="flex mt-4 w-[3.5rem] justify-center items-center">
-                                            <a className="transition hover:text-[2.65rem]" href="https://facebook.com/eastcourt"><FaFacebookF /></a>
+                                            <a className="transition hover:text-[2.65rem]" href="https://facebook.com/eastcourt" target='_blank'><FaFacebookF /></a>
                                         </li>
                                         <li className="flex mt-4 w-[3.5rem] justify-center items-center">
-                                            <a className="transition hover:text-[2.65rem]" href="https://linkedin.com/company/mbelu-consulting-estate-surveyours-and-valuers"><FaLinkedin /></a>
+                                            <a className="transition hover:text-[2.65rem]" target='_blank' href="https://linkedin.com/company/mbelu-consulting-estate-surveyours-and-valuers"><FaLinkedin /></a>
                                         </li>
                                         <li className="flex mt-4 w-[3.5rem] justify-center items-center">
-                                            <a className="transition hover:text-[2.65rem]" href=""><FaSquareInstagram /></a>
+                                            <a className="transition hover:text-[2.65rem]" href="" target='_blank'><FaSquareInstagram /></a>
                                         </li>
                                         <li className="flex mt-4 w-[3.5rem] justify-center items-center">
-                                            <a className="transition hover:text-[2.65rem]" href=""><FaWhatsapp/></a>
+                                            <a className="transition hover:text-[2.65rem]" href="https://wa.me/08034337148" target='_blank'><FaWhatsapp/></a>
                                         </li>
                                     </ul>
                                 </li>
@@ -100,13 +100,13 @@ const Footer = () => {
                                 </nav>
                                     <form className="max-w-sm">
                                         <h2 className="font-display font-semibold text-lg tracking-wider ">Sign up for our newsletter</h2>
-                                        <p className="mt-4 text-sm ">Subscribe to get the latest design news, articles, resources and inspiration.</p>
+                                        <p className="mt-4 text-sm ">Subscribe.</p>
                                         <div className="relative mt-6">
                                             <input type="email" placeholder="Email address" autoComplete="email" aria-label="Email address" className="block w-full rounded-2xl border border-neutral-300/60 bg-transparent py-4 pl-6 pr-20 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5"/>
                                                 <div className="absolute inset-y-1 right-1 flex justify-end">
                                                     <button type="submit" aria-label="Submit" className="flex aspect-square h-full items-center justify-center rounded-xl bg-amber-950 text-white transition hover:bg-neutral-800">
                                                         <svg viewBox="0 0 16 6" aria-hidden="true" className="w-4">
-                                                            <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M16 3 10 .5v2H0v1h10v2L16 3Z"></path>
+                                                            <path fill="currentColor" fillRule="evenodd" clipRule="evenodd" d="M16 3 10 .5v2H0v1h10v2L16 3Z"></path>
                                                     </svg>
                                                 </button>
                                             </div>

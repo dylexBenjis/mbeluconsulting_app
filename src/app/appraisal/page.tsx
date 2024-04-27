@@ -35,7 +35,6 @@ const Appraisal: React.FC = () => {
   
   const [submitting, setSubmitting] = useState(false);
   const [responseValue, setResponse] = useState('');
-  const [responseToast, setResponseToast] = useState(false);
 
   useEffect(() => { console.log(submitting) }, [submitting])
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -48,7 +47,7 @@ const Appraisal: React.FC = () => {
       console.log('waited for:', response)
       // Reset form data after submission if needed
       if (response) {
-        setResponseToast(true);
+        console.log(response)
         setResponse(response);
         notify();
         setFormData({

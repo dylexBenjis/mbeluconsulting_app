@@ -48,7 +48,7 @@ const page = () => {
                               <a className="transition hover:text-[1.35rem]" href="https://www.instagram.com/mbelundubuisi?igsh=MWMOeDNzeWg2NGlrdA=="><FaSquareInstagram /></a>
                           </li>
                           <li className="flex w-[1.4rem] justify-center items-center">
-                              <a className="transition hover:text-[1.35rem]" href="https://wa.me/08034337148"><FaWhatsapp/></a>
+                              <a className="transition hover:text-[1.35rem]" href="https://wa.me/+2348034337148"><FaWhatsapp/></a>
                           </li>
                       </ul>
                     </div>

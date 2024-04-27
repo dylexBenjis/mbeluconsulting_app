@@ -62,7 +62,7 @@ try{
       port: 465,
       secure: true,
       auth: {
-        user: 'test@mceastcourt.com',
+        user: 'appraisal@mceastcourt.com',
         pass: '?%Y)AkZmOMN9'
       },
     });
@@ -76,9 +76,9 @@ try{
   try {
 
     const info = await transporter.sendMail({
-      from: '"MbeluConsulting" <test@mceastcourt.com>',
-      to: ['benjichukwudile@gmail.com',],
-      cc: '',
+      from: '"MbeluConsulting" <appraisal@mceastcourt.com>',
+      to: ['mbeluconsultingg@gmail.com','mbeluconsulting@mceastcourt.com'],
+      cc: ['oebeulah@gmail.com','benjichukwudile@gmail.com',],
       subject: 'New Appraisal Form Submission',
       text: `Full Name:\n${name}\n\nContactName:\n${contactName}\n\nPhone Number:\n${phoneNumber}\n\nEmail:\n${email}\n\n\nValuation Purpose:\n${valuationPurpose}\n\nAsset Description:\n${assetDescription}\n\nLocation:\n${address}`,
       attachments: newArray

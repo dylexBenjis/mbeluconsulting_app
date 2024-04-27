@@ -75,7 +75,7 @@ const Footer = () => {
                                             <a className="transition hover:text-[2.65rem]" href="" target='_blank'><FaSquareInstagram /></a>
                                         </li>
                                         <li className="flex mt-4 w-[3.5rem] justify-center items-center">
-                                            <a className="transition hover:text-[2.65rem]" href="https://wa.me/08034337148" target='_blank'><FaWhatsapp/></a>
+                                            <a className="transition hover:text-[2.65rem]" href="https://wa.me/+2348034337148" target='_blank'><FaWhatsapp/></a>
                                         </li>
                                     </ul>
                                 </li>

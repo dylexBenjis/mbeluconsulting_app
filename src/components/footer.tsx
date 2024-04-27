@@ -32,30 +32,30 @@ const Footer = () => {
                                         <div className='flex justify-center'><Image src={marker1} alt=''/></div>
                                         <p className='flex justify-center text-lg py-2'>Lagos Island Office</p>
                                         <p className='flex justify-center'>Suite 188 Block A2-16, Sura Shopping Complex, Simpson Street, Lagos Island, Lagos</p>
-                                        <p className='flex justify-center'>0909 6447 703</p>
-                                        <p className='flex justify-center'>info@mceastcourt.com</p>
+                                        <p className='flex justify-center'>0909 6447 703 <br/>0806 874 6350</p>
+                                        <p className='flex justify-center'>mbeluconsultingg@gmail.com, mbeluconsulting@mceastcourt.com</p>
                                     </div>
                                     <div className='flex flex-col gap-x-1 '>
                                         <div className='flex justify-center'><Image src={marker2} alt=''/></div>
                                         <p className='flex justify-center text-lg py-2'>Abuja Office</p>
                                         <p className='flex justify-center'>Suite B4, Bobsar Complex (first floor), No. 4, Michika Street off Ahmadu Bello Way, Area 11, Abuja, F.C.T.</p>
-                                        <p className='flex justify-center'>0909 6447 703</p>
-                                        <p className='flex justify-center'>info@mceastcourt.com</p>
+                                        <p className='flex justify-center'>0909 6447 703 <br/>0806 874 6350</p>
+                                        <p className='flex justify-center'>mbeluconsultingg@gmail.com, mbeluconsulting@mceastcourt.com</p>
                                     </div>
                                     <div className='flex flex-col gap-x-1 '>
                                         <div className='flex justify-center'><Image src={marker3} alt=''/></div>
                                         <p className='flex justify-center text-lg py-2'>Anambra Office</p>
                                         <p className='flex justify-center'>
 20, Onitsha Road, Nnewi, Anambra State.</p>
-                                        <p className='flex justify-center'>0909 6447 703</p>
-                                        <p className='flex justify-center'>info@mceastcourt.com</p>
+                                        <p className='flex justify-center'>0909 6447 703 <br/>0806 874 6350</p>
+                                        <p className='flex justify-center'>mbeluconsultingg@gmail.com, mbeluconsulting@mceastcourt.com</p>
                                     </div>
                                     <div className='flex flex-col gap-x-1 '>
                                         <div className='flex justify-center'><Image src={marker4} alt=''/></div>
                                         <p className='flex justify-center text-lg py-2'>PortHarcourt Office</p>
                                         <p className='flex justify-center'>Plot 209 East West Road, Rumuodara, Port Harcourt, Rivers State.</p>
-                                        <p className='flex justify-center'>0909 6447 703</p>
-                                        <p className='flex justify-center'>info@mceastcourt.com</p>
+                                        <p className='flex justify-center'>0909 6447 703 <br/>0806 874 6350</p>
+                                        <p className='flex justify-center'>mbeluconsultingg@gmail.com, mbeluconsulting@mceastcourt.com</p>
                                     </div>                                </div>
                             </div>
                             <div className='flex flex-col lg:flex-row  gap-y-16 gap-x-[12rem]  justify-center items-center'>

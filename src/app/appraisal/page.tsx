@@ -41,12 +41,9 @@ const Appraisal: React.FC = () => {
     const formData = new FormData(e.currentTarget as HTMLFormElement)
     try {
       setSubmitting(true)
-      console.log(submitting, 'entered')
       const response = await handler(formData);
-      console.log('waited for:', response)
       // Reset form data after submission if needed
       if (response) {
-        console.log(response)
         notify(response);
         setFormData({
           name: '',

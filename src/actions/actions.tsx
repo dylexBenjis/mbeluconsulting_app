@@ -75,19 +75,19 @@ try{
         // Send mail with defined transport object
   try {
 
-    // const info = await transporter.sendMail({
-    //   from: '"MbeluConsulting" <appraisal@mceastcourt.com>',
-    //   to: ['mbeluconsultingg@gmail.com','mbeluconsulting@mceastcourt.com'],
-    //   cc: ['oebeulah@gmail.com','benjichukwudile@gmail.com',],
-    //   subject: 'New Appraisal Form Submission',
-    //   text: `Full Name:\n${name}\n\nContactName:\n${contactName}\n\nPhone Number:\n${phoneNumber}\n\nEmail:\n${email}\n\n\nValuation Purpose:\n${valuationPurpose}\n\nAsset Description:\n${assetDescription}\n\nLocation:\n${address}`,
-    //   attachments: newArray
-    // });
+    const info = await transporter.sendMail({
+      from: '"MbeluConsulting" <appraisal@mceastcourt.com>',
+      to: ['mbeluconsultingg@gmail.com','mbeluconsulting@mceastcourt.com'],
+      cc: ['oebeulah@gmail.com','benjichukwudile@gmail.com',],
+      subject: 'New Appraisal Form Submission',
+      text: `Full Name:\n${name}\n\nContactName:\n${contactName}\n\nPhone Number:\n${phoneNumber}\n\nEmail:\n${email}\n\n\nValuation Purpose:\n${valuationPurpose}\n\nAsset Description:\n${assetDescription}\n\nLocation:\n${address}`,
+      attachments: newArray
+    });
 
       handlerReturn = 'Appraisal sent'
 
 
-        // console.log('Email sent: %s', info.messageId, info, handlerReturn);
+        console.log('Email sent: %s', info.messageId, info, handlerReturn);
     }
   catch (error) { console.log(error);  handlerReturn='Appraisal not sent'}
 

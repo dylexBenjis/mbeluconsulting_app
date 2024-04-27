@@ -24,7 +24,7 @@ const page = () => {
             <div className='flex flex-col py-8 gap-y-10'>
               <div className='text-2xl'>Lagos Office</div>
               <div className='grid grid-cols-2 grid-rows-2 text-[14px] lg:text-base font-normal gap-y-3'>
-                      <div className='ml-0 sm:ml-[3.5rem]' >Call Us:<br/>0909 6447 703, 0806 874 6350</div>
+                      <div className='ml-0 sm:ml-[3.5rem]' >Call Us:<br/>0909 6447 703, <br/>0806 874 6350</div>
                       <div className='ml-0 sm:ml-[3.5rem]'>Suite 188 Block A2-16, Sura Shopping Complex, Simpson Street, Lagos Island, Lagos.</div>
                       <div className='flex flex-col sm:flex-row gap-x-2'><div className='text-4xl sm:text-5xl text-amber-950'><FaQuestion/></div><div className='text-[12px] lg:text-base'><p>Have any Questions?</p><p><a className='text-blue-600' href='mailto:info@mceastcourt.com'>info@mceastcourt.com</a></p></div></div>
                       <div className='flex flex-col sm:flex-row gap-x-2'><div className='text-4xl sm:text-5xl text-amber-950'><FaRegClock/></div><div><p>Monday — Friday</p><p>9:00 AM — 6:00 PM</p></div></div>
@@ -36,7 +36,7 @@ const page = () => {
             <div className='flex flex-col py-8 gap-y-10'>
               <div className='text-2xl'>Abuja Office</div>
               <div className='grid grid-cols-2 grid-rows-2 text-[14px] lg:text-base font-normal gap-y-3'>
-                      <div className='ml-0 sm:ml-[3.5rem]' >Call Us:<br/>0909 6447 703, 0806 874 6350</div>
+                      <div className='ml-0 sm:ml-[3.5rem]' >Call Us:<br/>0909 6447 703, <br/>0806 874 6350</div>
                       <div className='ml-0 sm:ml-[3.5rem]'>Suite B4, Bobsar Complex (first floor), No. 4, Michika Street off Ahmadu Bello Way, Area 11, Abuja, F.C.T.</div>
                       <div className='flex flex-col sm:flex-row gap-x-2'><div className='text-4xl sm:text-5xl text-amber-950'><FaQuestion/></div><div className='text-[12px] lg:text-base'><p>Have any Questions?</p><p><a className='text-blue-600' href='mailto:info@mceastcourt.com'>info@mceastcourt.com</a></p></div></div>
                       <div className='flex flex-col sm:flex-row gap-x-2'><div className='text-4xl sm:text-5xl text-amber-950'><FaRegClock/></div><div><p>Monday — Friday</p><p>9:00 AM — 6:00 PM</p></div></div>
@@ -48,7 +48,7 @@ const page = () => {
             <div className='flex flex-col py-8 gap-y-10'>
               <div className='text-2xl'>Anambra Office</div>
               <div className='grid grid-cols-2 grid-rows-2 text-[14px] lg:text-base font-normal gap-y-3'>
-                      <div className='ml-0 sm:ml-[3.5rem]' >Call Us:<br/>0909 6447 703, 0806 874 6350</div>
+                      <div className='ml-0 sm:ml-[3.5rem]' >Call Us:<br/>0909 6447 703, <br/>0806 874 6350</div>
                       <div className='ml-0 sm:ml-[3.5rem]'>20, Onitsha Road, Nnewi, Anambra State.</div>
                       <div className='flex flex-col sm:flex-row gap-x-2'><div className='text-4xl sm:text-5xl text-amber-950'><FaQuestion/></div><div className='text-[12px] lg:text-base'><p>Have any Questions?</p><p><a className='text-blue-600' href='mailto:info@mceastcourt.com'>info@mceastcourt.com</a></p></div></div>
                       <div className='flex flex-col sm:flex-row gap-x-2'><div className='text-4xl sm:text-5xl text-amber-950'><FaRegClock/></div><div><p>Monday — Friday</p><p>9:00 AM — 6:00 PM</p></div></div>
@@ -61,7 +61,7 @@ const page = () => {
             <div className='flex flex-col py-8 gap-y-10'>
               <div className='text-2xl'>Port Harcourt Office</div>
               <div className='grid grid-cols-2 grid-rows-2 text-[14px] lg:text-base font-normal gap-y-3'>
-                      <div className='ml-0 sm:ml-[3.5rem]' >Call Us:<br/>0909 6447 703, 0806 874 6350</div>
+                      <div className='ml-0 sm:ml-[3.5rem]' >Call Us:<br/>0909 6447 703, <br/>0806 874 6350</div>
                       <div className='ml-0 sm:ml-[3.5rem]'>
 Plot 209 East West Road, Rumuodara, Port Harcourt, Rivers State.</div>
                       <div className='flex flex-col sm:flex-row gap-x-2'><div className='text-4xl sm:text-5xl text-amber-950'><FaQuestion/></div><div className='text-[12px] lg:text-base'><p>Have any Questions?</p><p><a className='text-blue-600' href='mailto:info@mceastcourt.com'>info@mceastcourt.com</a></p></div></div>

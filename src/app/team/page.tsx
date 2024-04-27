@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import styles from '@/app/page.module.css'
-import { FaXTwitter, FaFacebookF, FaLinkedin,FaSquareInstagram,FaWhatsapp } from 'react-icons/fa6'
+import { FaEnvelope, FaFacebookF, FaLinkedin,FaSquareInstagram,FaWhatsapp } from 'react-icons/fa6'
 import src1 from '@/images/team1.jpg'
 
 const page = () => {
@@ -37,7 +37,7 @@ const page = () => {
                       <p className="text-base tracking-tight text-slate-500 transition duration-300">Principal Manager</p>
                       <ul role="list" className="mt-1 text-xl flex flex-row gap-x-1 h-[1.5rem] justify-center items-center">
                           <li className="flex w-[1.4rem] justify-center items-center">
-                              <a className="transition hover:text-[1.35rem]" href="/"><FaXTwitter/></a>
+                              <a className="transition hover:text-[1.35rem]" href="mailto:mbeluconsultingg@gmail.com"><FaEnvelope/></a>
                           </li><li className="flex w-[1.4rem] justify-center items-center">
                               <a className="transition hover:text-[1.35rem]" href="https://www.facebook.com/mbelu.ndubuisi"><FaFacebookF /></a>
                           </li>
@@ -125,7 +125,7 @@ const page = () => {
                     </div>
                     <div className='h-[13rem] w-full bg-gray-100 transition duration-200 text-center p-5'>
                       <h3 className=" font-display text-xl font-bold tracking-tight text-slate-900 ">CHUKWUMA CHIOMA,</h3>
-                      <p className="text-base tracking-tight text-slate-500 transition duration-300">RSV</p>
+                      <p className="text-base tracking-tight text-slate-500 transition duration-300"></p>
                       <p className="text-base tracking-tight text-slate-500 transition duration-300">Property Manager</p>
                       {/* <ul role="list" className="mt-1 text-xl flex flex-row gap-x-1 h-[1.5rem] justify-center items-center">
                           <li className="flex w-[1.4rem] justify-center items-center">

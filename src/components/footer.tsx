@@ -27,7 +27,7 @@ const Footer = () => {
                         <div className="grid grid-cols-1 gap-x-[8rem] gap-y-16 lg:grid-cols-1">
                             <div>
                                 <p className='flex justify-center font-semibold text-xl mb-5'>Our Offices</p>
-                                <div className='grid grid-cols-2 gap-y-3 gap-x-4 lg:gap-x-10 mb-3 lg:grid-cols-4 w-full text-center text-sm'>
+                                <div className='grid grid-cols-1 gap-y-3 gap-x-4 lg:gap-x-10 mb-3 sm:grid-cols-2 lg:grid-cols-4 w-full text-center text-sm'>
                                     <div className='flex flex-col gap-x-1 '>
                                         <div className='flex justify-center'><Image src={marker1} alt=''/></div>
                                         <p className='flex justify-center text-lg py-2'>Lagos Island Office</p>

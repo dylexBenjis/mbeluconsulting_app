@@ -28,13 +28,12 @@ const Appraisal: React.FC = () => {
     });
   };
 
-  const notify = () => toast.success(responseValue, {
+  const notify = (response: string) => toast.success(response, {
     style:{color:'rgb(0,0,0)',},
     icon: false,
   })
   
   const [submitting, setSubmitting] = useState(false);
-  const [responseValue, setResponse] = useState('');
 
   useEffect(() => { console.log(submitting) }, [submitting])
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -48,8 +47,7 @@ const Appraisal: React.FC = () => {
       // Reset form data after submission if needed
       if (response) {
         console.log(response)
-        setResponse(response);
-        notify();
+        notify(response);
         setFormData({
           name: '',
           contactName: '',

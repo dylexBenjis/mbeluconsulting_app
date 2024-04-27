@@ -1,6 +1,7 @@
 .Toastify__progress-bar--success {
        background-color: #961010; 
 }
-.Toastify__progress-bar-theme--colored.Toastify__progress-bar--success{
-    background-color: #961010;
+
+.Toastify__toast-theme--colored.Toastify__toast--success {
+    color: black;
 }

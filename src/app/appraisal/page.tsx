@@ -30,7 +30,7 @@ const Appraisal: React.FC = () => {
 
   const notify = () => toast.success(responseValue, {
     style: {
-      
+      color:'rgb(0, 0, 0)',
     },
     icon: false,
   })

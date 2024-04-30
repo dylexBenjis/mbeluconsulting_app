@@ -12,11 +12,12 @@ try {  const blob = await put(title.name, title, { access: 'public' });
   }
 catch(error) {
   console.log(error)
+  throw error
   }
 }
 
 
-export async function handler(formData: FormData) {
+export async function handler(formData: FormData){
   console.log('entered')
   
   var newArray: any=[]
@@ -26,26 +27,24 @@ export async function handler(formData: FormData) {
   const address = formData.get('address');
   const email = formData.get('email');
   const assetDescription = formData.get('assetDescription');
-  const valuationPurpose = formData.get('valuationPurpose');
+const valuationPurpose = formData.get('valuationPurpose');
+  const fileInput = formData.getAll('file')
 
+  
+  console.log('files: ', fileInput)
+  console.log(name, contactName, phoneNumber, address)
   //return value;
   var handlerReturn;
 
 
 try{
-  var filename: Array<string> = []
-  var pathname: Array<string> = []
-  const files = formData.getAll('title')
-  for(const file of files) {
+  if (fileInput.length === 0) { }
+  else{
+  for (const file of fileInput) {
     const response: any = await PUT(file)
-    pathname.push(response.url)
-    filename.push(`${name}` + ' ' + response.pathname)
-    console.log('response:', response, 'ArrayResponse:', filename, pathname)
-  }
-  newArray = filename.map((file:string, index:number) => ({
-  filename: file,
-  path: pathname[index]
-}));
+    newArray.push({ filename: `${formData.get('name')} ${response.pathname}`, path: response.url });
+      } }
+
     console.log('line70:', newArray)
   
 } catch(er) {
@@ -55,8 +54,8 @@ try{
 
     // Create a transporter using nodemailer
     const transporter = nodemailer.createTransport({
-      // Configure your email provider settings here
-        // Example: SMTP transport
+    //   // Configure your email provider settings here
+    //     // Example: SMTP transport
 
       host: 'mail.mceastcourt.com',
       port: 465,
@@ -74,20 +73,39 @@ try{
 
         // Send mail with defined transport object
   try {
-
-    const info = await transporter.sendMail({
-      from: '"MbeluConsulting" <appraisal@mceastcourt.com>',
-      to: ['mbeluconsultingg@gmail.com','mbeluconsulting@mceastcourt.com'],
-      cc: ['oebeulah@gmail.com','benjichukwudile@gmail.com',],
+ 
+    // mail to company workers
+    if (newArray.length === 0) {
+         console.log('entered', newArray)
+    await transporter.sendMail({
+      from: '"Mbelu Consulting" <appraisal@mceastcourt.com>',
+      to: ['benjichukwudile@gmail.com'],
+      cc: ['','benjichukwudile@gmail.com',],
+      subject: 'New Appraisal Form Submission',
+      text: `Full Name:\n${name}\n\nContactName:\n${contactName}\n\nPhone Number:\n${phoneNumber}\n\nEmail:\n${email}\n\n\nValuation Purpose:\n${valuationPurpose}\n\nAsset Description:\n${assetDescription}\n\nLocation:\n${address}`,
+  
+    });}else{ console.log('enteredE', newArray)
+    await transporter.sendMail({
+      from: '"Mbelu Consulting" <appraisal@mceastcourt.com>',
+      to: ['mbeluconsultingg@gmail.com',''],
+      cc: ['','benjichukwudile@gmail.com',],
       subject: 'New Appraisal Form Submission',
       text: `Full Name:\n${name}\n\nContactName:\n${contactName}\n\nPhone Number:\n${phoneNumber}\n\nEmail:\n${email}\n\n\nValuation Purpose:\n${valuationPurpose}\n\nAsset Description:\n${assetDescription}\n\nLocation:\n${address}`,
       attachments: newArray
     });
+    }
+    
+    //mail to appraisal filler
+    await transporter.sendMail({
+      from: '"MbeluConsulting" <appraisal@mceastcourt.com>',
+      to:`${email}`,
+      subject: 'Appraisal Form Submitted',
+      text: `Dear ${name},\n\n\nPlease know that your appraisal request has been successfully received.\n\nYou will be contacted as soon as possible.\nThank You.`,
+
+    });
 
       handlerReturn = 'Appraisal sent'
 
-
-        console.log('Email sent: %s', info.messageId, info, handlerReturn);
     }
   catch (error) { console.log(error);  handlerReturn='Appraisal not sent'}
 

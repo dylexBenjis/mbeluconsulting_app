@@ -1,14 +1,22 @@
 'use client'
-import React, { useEffect,  useState } from 'react';
+import React, { useEffect,  useRef,  useState } from 'react';
 import styles from '@/app/page.module.css'
-import { handler } from '@/actions/actions';
+import { handler as formHandler} from '@/actions/actions';
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import './toast.css'
 
 const Appraisal: React.FC = () => {
 
-
+  // Create a ref to manipulate input file after form submit
+  const inputRef = useRef<HTMLInputElement>(null);
+    const resetInputValue = () => {
+    // Access the input element using the current property of the ref
+    if (inputRef.current) {
+      // Reset the value of the input element
+      inputRef.current.value = '';
+    }
+  }
   const [formData, setFormData] = useState({
     name: '',
     contactName: '',
@@ -17,11 +25,20 @@ const Appraisal: React.FC = () => {
     address: '',
     assetDescription: '',
     valuationPurpose: '',
-    title: ''
   });
+  const [title, setTitle] = useState<any>([ ])
+
+    const handleFileChange = (e: any) => {
+    const fileList = e.target.files;
+    if (fileList) {
+      const filesArray = Array.from(fileList);
+      setTitle(filesArray);
+    }
+  };
 
   const handleChange = (e: { target: { name: any; value: any; }; }) => {
     const { name, value } = e.target;
+    console.log('entered', name, value)
     setFormData({
       ...formData,
       [name]: value
@@ -35,13 +52,12 @@ const Appraisal: React.FC = () => {
   
   const [submitting, setSubmitting] = useState(false);
 
-  useEffect(() => { console.log(submitting) }, [submitting])
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const formData = new FormData(e.currentTarget as HTMLFormElement)
+  const handleSubmit = async (formData: FormData) => {
     try {
       setSubmitting(true)
-      const response = await handler(formData);
+      console.log('entered', formData)
+      const response = await formHandler(formData);
+      console.log(response)
       // Reset form data after submission if needed
       if (response) {
         notify(response);
@@ -53,17 +69,37 @@ const Appraisal: React.FC = () => {
           address: '',
           assetDescription: '',
           valuationPurpose: '',
-          title: ''
         });
+        setTitle([]);
+        resetInputValue();
         setSubmitting(false)
       }
     } catch (error) {
-      console.error('Form submission failed:', error);
+      console.log('Form submission failed:', error);
     }
 
 
   };
 
+  const checkFileFirst = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log('Form event:', e);
+    const formData = new FormData(e.currentTarget);
+       if (title.length > 0) {
+        title.forEach((file: File) => {
+            formData.append(`file`, file);
+        });
+    }
+    console.log(title, formData)
+    if (title.length === 0) {
+    console.log('line 81:',title, formData)
+      handleSubmit(formData)
+    }
+    else {
+      console.log('line 86:',title, formData)
+      handleSubmit(formData);
+    }
+  }
 
     
     
@@ -74,14 +110,15 @@ const Appraisal: React.FC = () => {
       <ToastContainer position='bottom-right' autoClose={2500}/>
             <div className={styles.container}>
                 <div className='flex justify-center items-center p-3 text-2xl font-bold'>Appraisal Form</div><hr/>
-                <div className='w-full flex justify-center items-center'>
-            <form onSubmit={e => { setSubmitting(true); handleSubmit(e)}} className='flex flex-col pt-10 pb-10 gap-8 '>                  
+        <div className='w-full flex justify-center items-center'>
+
+          <form onSubmit={e=> { setSubmitting(true); checkFileFirst(e)}} className='flex flex-col pt-10 pb-10 gap-8 '>                  
       <div className='flex flex-col  gap-1'>
         <label htmlFor="name" className='font-semibold'>Name : </label>
         <input
           type="text"
           id="name"
-          required
+          
           name="name"
           value={formData.name}
                             onChange={handleChange}
@@ -94,7 +131,7 @@ const Appraisal: React.FC = () => {
         <input
           type="text"
           id="contactName"
-          required
+          
           name="contactName"
           value={formData.contactName}
                             onChange={handleChange}
@@ -107,7 +144,7 @@ const Appraisal: React.FC = () => {
         <input
           type="tel"
           id="phoneNumber"
-          required
+          
           name="phoneNumber"
           value={formData.phoneNumber}
           onChange={handleChange}
@@ -119,7 +156,7 @@ const Appraisal: React.FC = () => {
         <input
           type="email"
           id="email"
-          required
+          
           name="email"
           value={formData.email}
                             onChange={handleChange}
@@ -141,7 +178,7 @@ const Appraisal: React.FC = () => {
         <label htmlFor="assetDescription" className='font-semibold'>Description of Asset : </label>
         <textarea
           id="assetDescription"
-          required
+          
           name="assetDescription"
           value={formData.assetDescription}
           onChange={handleChange}
@@ -153,7 +190,7 @@ const Appraisal: React.FC = () => {
         <input
           type="text"
           id="valuationPurpose"
-          required
+          
           name="valuationPurpose"
           value={formData.valuationPurpose}
           onChange={handleChange}
@@ -166,9 +203,9 @@ const Appraisal: React.FC = () => {
           type="file"
           multiple
           id="title"
-          name="title"
-          value={formData.title}
-          onChange={handleChange}
+                name="title"
+                ref={inputRef}
+          onChange={handleFileChange}
                             className='border-b-2 border-amber-700 p-1  bg-gray-200/30'
         />
       </div>

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Mbelu Consulting",
   description: "A Valuation company with track records in providing excellent knowledge based real estate services",
   icons: {
-    icon:'/icon.png'
+    icon:'/icon.ico'
   }
 };
 

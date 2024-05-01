@@ -104,7 +104,7 @@ const page = () => {
                     </div>
                     <div className='h-[13rem] w-full bg-gray-100 transition duration-200 text-center p-5'>
                       <h3 className=" font-display text-xl font-bold tracking-tight text-slate-900 ">KENNETH OBINNA ANIGBO,</h3>
-                      <p className="text-base tracking-tight text-slate-500 transition duration-300"></p>
+                      <p className="text-base tracking-tight text-slate-500 transition duration-300">ANIVS</p>
                       <p className="text-base tracking-tight text-slate-500 transition duration-300">Partner</p>
                       <p className="text-[12px] tracking-tight text-slate-500 transition duration-300">Strategic: Asset Appraisal, Property Management, Real Estate Marketing and Arbitration</p>
                       {/* <ul role="list" className="mt-1 text-xl flex flex-row gap-x-1 h-[1.5rem] justify-center items-center">

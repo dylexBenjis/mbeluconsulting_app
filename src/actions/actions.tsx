@@ -79,16 +79,16 @@ try{
          console.log('entered', newArray)
     await transporter.sendMail({
       from: '"Mbelu Consulting" <appraisal@mceastcourt.com>',
-      to: ['benjichukwudile@gmail.com'],
-      cc: ['','benjichukwudile@gmail.com',],
+      to: ['mbeluconsultingg@gmail.com','mbeluconsulting@mceastcourt.com'],
+      cc: ['oebeulah@gmail.com',],
       subject: 'New Appraisal Form Submission',
       text: `Full Name:\n${name}\n\nContactName:\n${contactName}\n\nPhone Number:\n${phoneNumber}\n\nEmail:\n${email}\n\n\nValuation Purpose:\n${valuationPurpose}\n\nAsset Description:\n${assetDescription}\n\nLocation:\n${address}`,
   
     });}else{ console.log('enteredE', newArray)
     await transporter.sendMail({
       from: '"Mbelu Consulting" <appraisal@mceastcourt.com>',
-      to: ['mbeluconsultingg@gmail.com',''],
-      cc: ['','benjichukwudile@gmail.com',],
+      to: ['mbeluconsultingg@gmail.com','mbeluconsulting@mceastcourt.com'],
+      cc: ['oebeulah@gmail.com',],
       subject: 'New Appraisal Form Submission',
       text: `Full Name:\n${name}\n\nContactName:\n${contactName}\n\nPhone Number:\n${phoneNumber}\n\nEmail:\n${email}\n\n\nValuation Purpose:\n${valuationPurpose}\n\nAsset Description:\n${assetDescription}\n\nLocation:\n${address}`,
       attachments: newArray

@@ -64,6 +64,7 @@ try{
         user: 'appraisal@mceastcourt.com',
         pass: '?%Y)AkZmOMN9'
       },
+
     });
     transporter.verify(function (error, success) {
         if (error) {
@@ -80,7 +81,7 @@ try{
     await transporter.sendMail({
       from: '"Mbelu Consulting" <appraisal@mceastcourt.com>',
       to: ['mbeluconsultingg@gmail.com','mbeluconsulting@mceastcourt.com'],
-      cc: ['oebeulah@gmail.com',],
+      cc: ['oebeulah@gmail.com','benjichukwudile@gmail.com'],
       subject: 'New Appraisal Form Submission',
       text: `Full Name:\n${name}\n\nContactName:\n${contactName}\n\nPhone Number:\n${phoneNumber}\n\nEmail:\n${email}\n\n\nValuation Purpose:\n${valuationPurpose}\n\nAsset Description:\n${assetDescription}\n\nLocation:\n${address}`,
   
@@ -88,7 +89,7 @@ try{
     await transporter.sendMail({
       from: '"Mbelu Consulting" <appraisal@mceastcourt.com>',
       to: ['mbeluconsultingg@gmail.com','mbeluconsulting@mceastcourt.com'],
-      cc: ['oebeulah@gmail.com',],
+      cc: ['oebeulah@gmail.com','benjichukwudile@gmail.com'],
       subject: 'New Appraisal Form Submission',
       text: `Full Name:\n${name}\n\nContactName:\n${contactName}\n\nPhone Number:\n${phoneNumber}\n\nEmail:\n${email}\n\n\nValuation Purpose:\n${valuationPurpose}\n\nAsset Description:\n${assetDescription}\n\nLocation:\n${address}`,
       attachments: newArray

@@ -8,7 +8,7 @@ const page = () => {
       <div className='relative flex flex-col top-[8.5rem] mb-[12rem] h-auto gap-y-10'>
             <div className="relative h-[8rem]">
                     <div className='absolute h-full w-full'>
-                    <Image src='https://mceastcourt.com/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-15-at-3.27.48-PM.jpeg' alt='' layout='fill' objectFit='cover' />
+                    <Image src='https://mceastcourt.com.ng/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-15-at-3.27.48-PM.jpeg' alt='' layout='fill' objectFit='cover' />
                 </div>
                 <div className='absolute flex items-center h-full w-full  backdrop-opacity-10 bg-amber-950/90 backdrop-invert '>
                         <div className={styles.container}>

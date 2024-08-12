@@ -1,17 +1,17 @@
 import Image from 'next/image'
 import React from 'react'
 import styles from '@/app/page.module.css'
-import { FaEnvelope, FaFacebookF, FaLinkedin,FaSquareInstagram,FaWhatsapp } from 'react-icons/fa6'
+import { FaEnvelope, FaFacebookF, FaLinkedin,FaPhone,FaSquareInstagram,FaWhatsapp, FaXTwitter } from 'react-icons/fa6'
 import src1 from '@/images/team1.jpg'
 
 const page = () => {
   return (
     <div className='relative h-auto pb-40'>
-      <div className='h-[200px] sm:h-[300px] w-screen bg-fixed backdrop-brightness-100 bg-white/30' style={{ backgroundImage: "url('https://mceastcourt.com/wp-content/uploads/2021/11/image-19.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backdropFilter: 'blur(40px)', backgroundRepeat:'no-repeat', backgroundPositionY:'-200px'}}>
+      <div className='h-[200px] sm:h-[300px] w-screen bg-fixed backdrop-brightness-100 bg-white/30' style={{ backgroundImage: "url('https://mceastcourt.com.ng/wp-content/uploads/2021/11/image-19.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backdropFilter: 'blur(40px)', backgroundRepeat:'no-repeat', backgroundPositionY:'-200px'}}>
       </div>
       <div className='relative h-[10rem]'>
                     <div className='absolute h-[10rem] w-full'>
-                    <Image src='https://mceastcourt.com/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-15-at-3.27.48-PM.jpeg' alt='' layout='fill' objectFit='cover' />
+                    <Image src='https://mceastcourt.com.ng/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-15-at-3.27.48-PM.jpeg' alt='' layout='fill' objectFit='cover' />
                 </div>
                 <div className='absolute flex items-center h-[10rem] w-full  backdrop-opacity-10 bg-amber-950/90 backdrop-invert '>
                         <div className={styles.container}>
@@ -28,7 +28,7 @@ const page = () => {
                 <div className='flex flex-col h-[35rem] w-full shadow-md border-t-8 border-amber-900 bg-gray-100'>
                     <div className="group relative h-full w-full transform overflow-hidden rounded-4xl  ">
                       <div className="absolute h-[calc(35rem/1.5)] w-full bg-indigo-50 " style={{}}>
-                        <Image src='https://mceastcourt.com/wp-content/uploads/2024/04/IMG-20240421-WA0000.jpg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
+                        <Image src='https://mceastcourt.com.ng/wp-content/uploads/2024/04/IMG-20240421-WA0000.jpg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
                       </div>
                     </div>
                     <div className='h-[13rem] w-full bg-gray-100 transition duration-200 text-center p-5'>
@@ -48,6 +48,9 @@ const page = () => {
                               <a className="transition hover:text-[1.35rem]" href="https://www.instagram.com/mbelundubuisi?igsh=MWMOeDNzeWg2NGlrdA=="><FaSquareInstagram /></a>
                           </li>
                           <li className="flex w-[1.4rem] justify-center items-center">
+                              <a className="transition hover:text-[1.35rem]" href="tel: +2348034337148"><FaPhone/></a>
+                          </li>
+                          <li className="flex w-[1.4rem] justify-center items-center">
                               <a className="transition hover:text-[1.35rem]" href="https://wa.me/+2348034337148"><FaWhatsapp/></a>
                           </li>
                       </ul>
@@ -57,7 +60,7 @@ const page = () => {
                 <div className='flex flex-col h-[35rem] w-full shadow-md border-t-8 border-amber-900 bg-gray-100'>
                     <div className="group relative h-full w-full transform overflow-hidden rounded-4xl  ">
                       <div className="absolute h-[calc(35rem/1.5)] w-full bg-indigo-50 " style={{}}>
-                        <Image src='https://mceastcourt.com/wp-content/uploads/2023/04/IMG_8388-scaled-e1696548458228.jpg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
+                        <Image src='https://mceastcourt.com.ng/wp-content/uploads/2023/04/IMG_8388-scaled-e1696548458228.jpg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
                       </div>
                     </div>
                     <div className='h-[13rem] w-full bg-gray-100 transition duration-200 text-center p-5'>
@@ -65,20 +68,20 @@ const page = () => {
                       <p className="text-base tracking-tight text-slate-500 transition duration-300">MSC. ,RSV, ANIVS, ACE</p>
                       <p className="text-base tracking-tight text-slate-500 transition duration-300">Partner</p>
                       <p className="text-[12px] tracking-tight text-slate-500 transition duration-300">Strategic: Asset Appraisal and Facility Management</p>
-                      {/* <ul role="list" className="mt-1 text-xl flex flex-row gap-x-1 h-[1.5rem] justify-center items-center">
+                      <ul role="list" className="mt-1 text-xl flex flex-row gap-x-1 h-[1.5rem] justify-center items-center">
                           <li className="flex w-[1.4rem] justify-center items-center">
-                              <a className="transition hover:text-[1.35rem]" href="/work/family-fund"><FaXTwitter/></a>
+                              <a className="transition hover:text-[1.35rem]" href="tel: +2348068746350"><FaPhone/></a>
                           </li>
                           <li className="flex w-[1.4rem] justify-center items-center">
-                              <a className="transition hover:text-[1.35rem]" href="/work/phobia"><FaLinkedin /></a>
+                              <a className="transition hover:text-[1.35rem]" href="https://wa.me/+2348034337148"><FaWhatsapp/></a>
                           </li>
-                      </ul> */}
+                      </ul>
                     </div>
                 </div>
                 <div className='flex flex-col h-[35rem] w-full shadow-md border-t-8 border-amber-900 bg-gray-100'>
                     <div className="group relative h-full w-full transform overflow-hidden rounded-4xl  ">
                       <div className="absolute h-[calc(35rem/1.5)] w-full bg-indigo-50 " style={{}}>
-                        <Image src='https://mceastcourt.com/wp-content/uploads/2022/10/image2-1.jpeg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
+                        <Image src='https://mceastcourt.com.ng/wp-content/uploads/2022/10/image2-1.jpeg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
                       </div>
                     </div>
                     <div className='h-[13rem] w-full bg-gray-100 transition duration-200 text-center p-5'>
@@ -88,7 +91,7 @@ const page = () => {
                       <p className="text-[12px] tracking-tight text-slate-500 transition duration-300">Strategic: Property Valuation/ Feasibility and Viability Study</p>
                       {/* <ul role="list" className="mt-1 text-xl flex flex-row gap-x-1 h-[1.5rem] justify-center items-center">
                           <li className="flex w-[1.4rem] justify-center items-center">
-                              <a className="transition hover:text-[1.35rem]" href="/work/family-fund"><FaXTwitter/></a>
+                              <a className="transition hover:text-[1.35rem]" href="tel: +2348068746350"><FaXTwitter/></a>
                           </li>
                           <li className="flex w-[1.4rem] justify-center items-center">
                               <a className="transition hover:text-[1.35rem]" href="/work/phobia"><FaLinkedin /></a>
@@ -99,7 +102,7 @@ const page = () => {
                 <div className='flex flex-col h-[35rem] w-full shadow-md border-t-8 border-amber-900 bg-gray-100'>
                     <div className="group relative h-full w-full transform overflow-hidden rounded-4xl">
                       <div className="absolute h-[calc(35rem/1.5)] w-full bg-indigo-50 " style={{}}>
-                        <Image src='https://mceastcourt.com/wp-content/uploads/2022/10/image1.jpeg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
+                        <Image src='https://mceastcourt.com.ng/wp-content/uploads/2022/10/image1.jpeg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
                       </div>
                     </div>
                     <div className='h-[13rem] w-full bg-gray-100 transition duration-200 text-center p-5'>
@@ -120,27 +123,27 @@ const page = () => {
                 <div className='flex flex-col h-[35rem] w-full shadow-md border-t-8 border-amber-900 bg-gray-100'>
                     <div className="group relative h-full w-full transform overflow-hidden rounded-4xl  ">
                       <div className="absolute h-[calc(35rem/1.5)] w-full bg-indigo-50 " style={{}}>
-                        <Image src='https://mceastcourt.com/wp-content/uploads/2024/04/IMG-20240418-WA0000.jpg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
+                        <Image src='https://mceastcourt.com.ng/wp-content/uploads/2024/04/IMG-20240418-WA0000.jpg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
                       </div>
                     </div>
                     <div className='h-[13rem] w-full bg-gray-100 transition duration-200 text-center p-5'>
                       <h3 className=" font-display text-xl font-bold tracking-tight text-slate-900 ">CHUKWUMA CHIOMA,</h3>
                       <p className="text-base tracking-tight text-slate-500 transition duration-300"></p>
                       <p className="text-base tracking-tight text-slate-500 transition duration-300">Property Manager</p>
-                      {/* <ul role="list" className="mt-1 text-xl flex flex-row gap-x-1 h-[1.5rem] justify-center items-center">
+                      <ul role="list" className="mt-1 text-xl flex flex-row gap-x-1 h-[1.5rem] justify-center items-center">
                           <li className="flex w-[1.4rem] justify-center items-center">
-                              <a className="transition hover:text-[1.35rem]" href="/work/family-fund"><FaXTwitter/></a>
+                              <a className="transition hover:text-[1.35rem]" href="tel: +2348054027803"><FaPhone/></a>
                           </li>
                           <li className="flex w-[1.4rem] justify-center items-center">
-                              <a className="transition hover:text-[1.35rem]" href="/work/phobia"><FaLinkedin /></a>
+                              <a className="transition hover:text-[1.35rem]" href="https://wa.me/+2348034337148"><FaWhatsapp/></a>
                           </li>
-                      </ul> */}
+                      </ul>
                     </div>
                 </div>
                 <div className='flex flex-col h-[35rem] w-full shadow-md border-t-8 border-amber-900 bg-gray-100'>
                     <div className="group relative h-full w-full transform overflow-hidden rounded-4xl  ">
                       <div className="absolute h-[calc(35rem/1.5)] w-full bg-indigo-50 " style={{}}>
-                        <Image src='https://mceastcourt.com/wp-content/uploads/2022/10/image4-1.jpeg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
+                        <Image src='https://mceastcourt.com.ng/wp-content/uploads/2022/10/image4-1.jpeg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
                       </div>
                     </div>
                     <div className='h-[13rem] w-full bg-gray-100 transition duration-200 text-center p-5'>

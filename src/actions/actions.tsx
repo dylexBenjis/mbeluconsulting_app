@@ -57,11 +57,11 @@ try{
     //   // Configure your email provider settings here
     //     // Example: SMTP transport
 
-      host: 'mail.mceastcourt.com',
+      host: 'mail.mceastcourt.com.ng',
       port: 465,
       secure: true,
       auth: {
-        user: 'appraisal@mceastcourt.com',
+        user: 'appraisal@mceastcourt.com.ng',
         pass: '?%Y)AkZmOMN9'
       },
 
@@ -79,16 +79,16 @@ try{
     if (newArray.length === 0) {
          console.log('entered', newArray)
     await transporter.sendMail({
-      from: '"Mbelu Consulting" <appraisal@mceastcourt.com>',
-      to: ['mbeluconsultingg@gmail.com','mbeluconsulting@mceastcourt.com'],
+      from: '"Mbelu Consulting" <appraisal@mceastcourt.com.ng>',
+      to: ['mbeluconsultingg@gmail.com','mbeluconsulting@mceastcourt.com.ng'],
       cc: ['oebeulah@gmail.com','benjichukwudile@gmail.com'],
       subject: 'New Appraisal Form Submission',
       text: `Full Name:\n${name}\n\nContactName:\n${contactName}\n\nPhone Number:\n${phoneNumber}\n\nEmail:\n${email}\n\n\nValuation Purpose:\n${valuationPurpose}\n\nAsset Description:\n${assetDescription}\n\nLocation:\n${address}`,
   
     });}else{ console.log('enteredE', newArray)
     await transporter.sendMail({
-      from: '"Mbelu Consulting" <appraisal@mceastcourt.com>',
-      to: ['mbeluconsultingg@gmail.com','mbeluconsulting@mceastcourt.com'],
+      from: '"Mbelu Consulting" <appraisal@mceastcourt.com.ng>',
+      to: ['mbeluconsultingg@gmail.com','mbeluconsulting@mceastcourt.com.ng'],
       cc: ['oebeulah@gmail.com','benjichukwudile@gmail.com'],
       subject: 'New Appraisal Form Submission',
       text: `Full Name:\n${name}\n\nContactName:\n${contactName}\n\nPhone Number:\n${phoneNumber}\n\nEmail:\n${email}\n\n\nValuation Purpose:\n${valuationPurpose}\n\nAsset Description:\n${assetDescription}\n\nLocation:\n${address}`,
@@ -98,7 +98,7 @@ try{
     
     //mail to appraisal filler
     await transporter.sendMail({
-      from: '"MbeluConsulting" <appraisal@mceastcourt.com>',
+      from: '"MbeluConsulting" <appraisal@mceastcourt.com.ng>',
       to:`${email}`,
       subject: 'Appraisal Form Submitted',
       text: `Dear ${name},\n\n\nPlease know that your appraisal request has been successfully received.\n\nYou will be contacted as soon as possible.\nThank You.`,

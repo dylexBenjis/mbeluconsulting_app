@@ -115,7 +115,7 @@ const Appraisal: React.FC = () => {
           <form onSubmit={e=> { setSubmitting(true); checkFileFirst(e)}} className='flex flex-col pt-10 pb-10 gap-8 '>                  
       <div className='flex flex-col  gap-1'>
         <label htmlFor="name" className='font-semibold'>Name : </label>
-        <input
+        <input required
           type="text"
           id="name"
           
@@ -128,7 +128,7 @@ const Appraisal: React.FC = () => {
                         <div className='flex gap-y-8 gap-x-5 flex-col sm:flex-row'>
       <div className='flex flex-col  gap-1'>
         <label htmlFor="contactName" className='font-semibold'>Contact name : </label>
-        <input
+        <input required
           type="text"
           id="contactName"
           
@@ -141,7 +141,7 @@ const Appraisal: React.FC = () => {
 
       <div className='flex flex-col gap-1 '>
         <label htmlFor="phoneNumber" className='font-semibold'>Contact&#39;s phone number : </label>
-        <input
+        <input required
           type="tel"
           id="phoneNumber"
           
@@ -153,7 +153,7 @@ const Appraisal: React.FC = () => {
                 </div></div>
                     <div className='flex flex-col  gap-1'>
         <label htmlFor="contactName" className='font-semibold'>Email : </label>
-        <input
+        <input required
           type="email"
           id="email"
           
@@ -165,7 +165,7 @@ const Appraisal: React.FC = () => {
                     </div>
       <div className='flex flex-col  '>
         <label htmlFor="address" className='font-semibold'>Address of Asset : </label>
-        <input
+        <input required
           type="text"
           id="address"
           name="address"
@@ -187,7 +187,7 @@ const Appraisal: React.FC = () => {
       </div>
       <div className='flex flex-col  '>
         <label htmlFor="valuationPurpose" className='font-semibold'>Purpose of Valuation : </label>
-        <input
+        <input required
           type="text"
           id="valuationPurpose"
           
@@ -199,7 +199,7 @@ const Appraisal: React.FC = () => {
       </div> 
       <div className='flex flex-col '>
         <label htmlFor="title" className='font-semibold'>Title/ Invoice/ Inventory : </label>
-        <input
+        <input required
           type="file"
           multiple
           id="title"

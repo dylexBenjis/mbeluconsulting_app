@@ -12,7 +12,7 @@ const Services_and_team = () => {
       <div className="relative w-screen h-[100svh]" id='services_and_team'>
           <div className='grid grid-rows-2 lg:grid-cols-2  h-full '>
           <Component_slideRight>
-          <div className='relative h-[calc(100vh/2)] lg:h-screen'>
+          <div className='relative h-[calc(100svh/2)] lg:h-screen'>
               <div className='absolute h-full w-full'>
                   <Image src={src1} alt='' layout='fill' objectFit='cover'/>
                   
@@ -37,7 +37,7 @@ const Services_and_team = () => {
                       </div>
         </Component_slideRight>
           <Component_slideLeft>
-          <div className='relative h-[calc(100vh/2)] lg:h-screen text-white'>
+          <div className='relative h-[calc(100svh/2)] lg:h-screen text-white'>
               <div className='absolute h-full w-full'>
                   <Image src='/team1.jpg' alt='' layout='fill' objectFit='cover'/>
                   

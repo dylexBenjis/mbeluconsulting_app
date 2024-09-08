@@ -9,7 +9,16 @@ interface MyComponentProps {
 
 const ShowMore_ScrollButton: React.FC<MyComponentProps> = ({ scrollToElement }) => {
     
-
+  const offSet_func: number = (() => {
+    if (scrollToElement === 'needAnAppraisal') {
+      return 65
+    } else if (scrollToElement === 'services_and_team') {
+      return -10
+    }
+    else {
+      return 0
+    }
+  })() as number;
     
 
   return (
@@ -19,7 +28,7 @@ const ShowMore_ScrollButton: React.FC<MyComponentProps> = ({ scrollToElement }) 
       spy={true}
       smooth={true}
       hashSpy={true}
-      offset={scrollToElement==='needAnAppraisal'?65:0}
+      offset={offSet_func}
       delay={100}
       isDynamic={true}
       ignoreCancelEvents={false}

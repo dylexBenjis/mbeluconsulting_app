@@ -5,6 +5,7 @@ import { handler as formHandler} from '@/actions/actions';
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import './toast.css'
+import { ImSpinner2 } from 'react-icons/im';
 
 const Appraisal: React.FC = () => {
 
@@ -212,9 +213,9 @@ const Appraisal: React.FC = () => {
                               <div className='flex justify-center items-center'>  <button
                 type="submit"
                 disabled={submitting}
-                className="flex  bg-amber-950 hover:scale-110 text-white font-semibold py-2 px-4 rounded-md"
+                className="flex bg-amber-950 hover:scale-110 text-white font-semibold py-2 px-4 rounded-md"
                 >
-                {submitting ? 'Submitting...' : 'Submit'}
+                {submitting ? <p className='flex gap-x-2'><p>Submitting</p><p><ImSpinner2 className='text-xl animate-spin'/></p></p> : 'Submit'}
         </button></div>
 
                 </form> </div>

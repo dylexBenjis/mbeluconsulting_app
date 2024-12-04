@@ -60,7 +60,7 @@ const page = () => {
                 <div className='flex flex-col h-[35rem] w-full shadow-md border-t-8 border-amber-900 bg-gray-100'>
                     <div className="group relative h-full w-full transform overflow-hidden rounded-4xl  ">
                       <div className="absolute h-[calc(35rem/1.5)] w-full bg-indigo-50 " style={{}}>
-                        <Image src={url('https://mceastcourt.com.ng/wp-content/uploads/2023/04/IMG_8388-scaled-e1696548458228.jpg')} alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
+                        <Image src='https://mceastcourt.com.ng/wp-content/uploads/2023/04/IMG_8388-scaled-e1696548458228.jpg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
                       </div>
                     </div>
                     <div className='h-[13rem] w-full bg-gray-100 transition duration-200 text-center p-5'>

@@ -13,7 +13,7 @@ const nextConfig = {
         port: '',
         pathname: '/wp-content/uploads/**',
       }
-    ],
+    ],domains: ['mceastcourt.com.ng'],
   },
 };
 

@@ -7,7 +7,7 @@ import src1 from '@/images/team1.jpg'
 const page = () => {
   return (
     <div className='relative h-auto pb-40'>
-      <div className='h-[200px] sm:h-[300px] w-screen bg-fixed backdrop-brightness-100 bg-white/30' style={{ backgroundImage: "url('https://mceastcourt.com.ng/wp-content/uploads/2021/11/image-19.jpg')", backgroundSize: 'contain', backgroundPosition: 'center', backdropFilter: 'blur(40px)', backgroundRepeat:'no-repeat', backgroundPositionY:'-200px'}}>
+      <div className='h-[200px] sm:h-[300px] w-screen bg-fixed backdrop-brightness-100 bg-white/30' style={{ backgroundImage: "url('https://mceastcourt.com.ng/wp-content/uploads/2021/11/image-19.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backdropFilter: 'blur(40px)', backgroundRepeat:'no-repeat', backgroundPositionY:'-200px'}}>
       </div>
       <div className='relative h-[10rem]'>
                     <div className='absolute h-[10rem] w-full'>

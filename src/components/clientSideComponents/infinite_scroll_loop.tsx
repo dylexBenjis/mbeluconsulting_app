@@ -40,16 +40,16 @@ const Infinite_scroll_loop = (props: any) => {
           <div className='scroller'>
             <ul className='tag-list scroller_inner'>
                 <div className='flex h-[150px] w-[300px] sm:w-[400px] items-center justify-center  grayscale hover:filter-none cursor-pointer'>
-              <Image src='https://mceastcourt.com.ng/wp-content/uploads/2021/09/esvarbon.png' alt='bgImage' height= {150} width={400} /></div>
+              <Image src='/eastcourt/esvarbon.png' alt='bgImage' height= {150} width={400} /></div>
                      <div className='flex h-[150px] w-[300px] sm:w-[350px] items-center justify-center  grayscale hover:filter-none cursor-pointer '>     
-              <img src='https://mceastcourt.com.ng/wp-content/uploads/2021/09/CASLE.jpeg' alt='bgImg' height= {100} width={350} /></div>
+              <img src='/eastcourt/CASLE.jpeg' alt='bgImg' height= {100} width={350} /></div>
                      <div className='flex h-[150px] w-[200px] justify-center  grayscale hover:filter-none cursor-pointer '>
-              <Image src='https://mceastcourt.com.ng/wp-content/uploads/2021/09/NIESV.png' alt='bgImage' objectFit='cover' height={200} width={200} /></div>
+              <Image src='/eastcourt/NIESV.png' alt='bgImage' objectFit='cover' height={200} width={200} /></div>
             
             <div className='h-[150px] w-[170px]justify-center flex  grayscale hover:filter-none cursor-pointer '>
-              <Image src='https://mceastcourt.com.ng/wp-content/uploads/2021/09/IDRPN.jpeg' alt='bgImage' objectFit='cover' height= {200} width={200} /></div>
-                      <div className='flex h-[150px] w-[350px]  grayscale hover:filter-none cursor-pointer '>
-              <Image src='https://mceastcourt.com.ng/wp-content/uploads/2021/09/FIABCI.png' alt='bgImage' objectFit='cover' height= {200} width={300}/></div>
+              <Image src='/eastcourt/IDRPN.jpg' alt='bgImage' objectFit='cover' height= {200} width={200} /></div>
+                <div className='flex h-[150px] w-[350px]items-center justify-center   grayscale hover:filter-none cursor-pointer '>
+              <Image src='/eastcourt/fib.png' alt='bgImage' objectFit='cover' height= {200} width={300}/></div>
             </ul>
           </div>
     </div>

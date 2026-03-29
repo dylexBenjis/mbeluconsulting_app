@@ -7,11 +7,13 @@ import src1 from '@/images/team1.jpg'
 const page = () => {
   return (
     <div className='relative h-auto pb-40'>
-      <div className='h-[200px] sm:h-[300px] w-screen bg-fixed backdrop-brightness-100 bg-white/30' style={{ backgroundImage: "url('https://mceastcourt.com.ng/wp-content/uploads/2021/11/image-19.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backdropFilter: 'blur(40px)', backgroundRepeat:'no-repeat', backgroundPositionY:'-200px'}}>
+      <div className='h-[200px] sm:h-[300px] w-screen bg-fixed backdrop-brightness-100 bg-white/30' style={{ backgroundImage: "url('/team1.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backdropFilter: 'blur(40px)', backgroundRepeat:'no-repeat', backgroundPositionY:'-200px'}}/>
+      <div className='absolute top-0 left-0 h-[200px] sm:h-[300px] bg-black/50 w-screen flex items-center justify-center'>
       </div>
+
       <div className='relative h-[10rem]'>
                     <div className='absolute h-[10rem] w-full'>
-                    <img src='https://mceastcourt.com.ng/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-15-at-3.27.48-PM.jpeg' alt='' />
+                    {/* <img src= alt='' /> */}
                 </div>
                 <div className='absolute flex items-center h-[10rem] w-full  backdrop-opacity-10 bg-amber-950/90 backdrop-invert '>
                         <div className={styles.container}>
@@ -28,7 +30,7 @@ const page = () => {
                 <div className='flex flex-col h-[35rem] w-full shadow-md border-t-8 border-amber-900 bg-gray-100'>
                     <div className="group relative h-full w-full transform overflow-hidden rounded-4xl  ">
                       <div className="absolute h-[calc(35rem/1.5)] w-full bg-indigo-50 " style={{}}>
-                        <img src='https://mceastcourt.com.ng/wp-content/uploads/2024/04/IMG-20240421-WA0000.jpg' alt=""  className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
+                        <img src='/eastcourt/pp1.jpeg' alt=""  className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
                       </div>
                     </div>
                     <div className='h-[13rem] w-full bg-gray-100 transition duration-200 text-center p-5'>
@@ -60,7 +62,7 @@ const page = () => {
                 <div className='flex flex-col h-[35rem] w-full shadow-md border-t-8 border-amber-900 bg-gray-100'>
                     <div className="group relative h-full w-full transform overflow-hidden rounded-4xl  ">
                       <div className="absolute h-[calc(35rem/1.5)] w-full bg-indigo-50 " style={{}}>
-                        <Image src='https://mceastcourt.com.ng/wp-content/uploads/2023/04/IMG_8388-scaled-e1696548458228.jpg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
+                        <Image src='/eastcourt/pp2.jpeg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
                       </div>
                     </div>
                     <div className='h-[13rem] w-full bg-gray-100 transition duration-200 text-center p-5'>
@@ -81,7 +83,7 @@ const page = () => {
                 <div className='flex flex-col h-[35rem] w-full shadow-md border-t-8 border-amber-900 bg-gray-100'>
                     <div className="group relative h-full w-full transform overflow-hidden rounded-4xl  ">
                       <div className="absolute h-[calc(35rem/1.5)] w-full bg-indigo-50 " style={{}}>
-                        <Image src='https://mceastcourt.com.ng/wp-content/uploads/2022/10/image2-1.jpeg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
+                        <Image src='/eastcourt/image2.jpeg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
                       </div>
                     </div>
                     <div className='h-[13rem] w-full bg-gray-100 transition duration-200 text-center p-5'>
@@ -102,7 +104,7 @@ const page = () => {
                 <div className='flex flex-col h-[35rem] w-full shadow-md border-t-8 border-amber-900 bg-gray-100'>
                     <div className="group relative h-full w-full transform overflow-hidden rounded-4xl">
                       <div className="absolute h-[calc(35rem/1.5)] w-full bg-indigo-50 " style={{}}>
-                        <Image src='https://mceastcourt.com.ng/wp-content/uploads/2022/10/image1.jpeg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
+                        <Image src='/eastcourt/image1.jpeg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
                       </div>
                     </div>
                     <div className='h-[13rem] w-full bg-gray-100 transition duration-200 text-center p-5'>
@@ -143,7 +145,7 @@ const page = () => {
                 <div className='flex flex-col h-[35rem] w-full shadow-md border-t-8 border-amber-900 bg-gray-100'>
                     <div className="group relative h-full w-full transform overflow-hidden rounded-4xl  ">
                       <div className="absolute h-[calc(35rem/1.5)] w-full bg-indigo-50 " style={{}}>
-                        <Image src='https://mceastcourt.com.ng/wp-content/uploads/2022/10/image4-1.jpeg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
+                        <Image src='/eastcourt/image4.jpeg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
                       </div>
                     </div>
                     <div className='h-[13rem] w-full bg-gray-100 transition duration-200 text-center p-5'>

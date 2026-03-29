@@ -51,6 +51,7 @@ const Infinite_scroll_loop = (props: any) => {
                 <div className='flex h-[150px] w-[350px]items-center justify-center   grayscale hover:filter-none cursor-pointer '>
               <Image src='/eastcourt/fib.png' alt='bgImage' objectFit='cover' height= {200} width={300}/></div>
             </ul>
+            
           </div>
     </div>
   )

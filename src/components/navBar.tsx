@@ -35,7 +35,7 @@ const NavBar = () => {
   const alert_properties = () => {
     const a = confirm('you will be redirected to eastcourt, a subsidiary of mbelu consulting to see available properties.')
     if (a) {
-      window.open('https://www.mceastcourt.com', '_blank')
+      window.open('https://mceastcourt.com.ng', '_blank')
       
     }
   }

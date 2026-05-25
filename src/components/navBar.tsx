@@ -32,6 +32,12 @@ const NavBar = () => {
     }else{setMenuOpen(false)}
   }
 
+  const [modalOpen, setModalOpen] = useState(false);
+  const handleModal = () => {
+    if (!modalOpen) {
+      setModalOpen(true)
+    }else{setModalOpen(false)}
+  }
   const alert_properties = () => {
     const a = confirm('you will be redirected to eastcourt, a subsidiary of mbelu consulting to see available properties.')
     if (a) {
@@ -72,8 +78,16 @@ const NavBar = () => {
                   <div><Link href='/services' className='hover:text-gray-600' onClick={handleMenu}>Services</Link></div>
                   <div><Link href='/team' className='hover:text-gray-600' onClick={handleMenu}>Our People / Team</Link></div>
                   <div><Link href='/contact_us' className='hover:text-gray-600' onClick={handleMenu}>Contact</Link></div>
-                  <div><a onClick={alert_properties} className='hover:text-gray-600 cursor-pointer'>Properties</a></div>
+                  <div><a onClick={handleModal} className='hover:text-gray-600 cursor-pointer'>Properties</a></div>
               </div>
+              {modalOpen && <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/50 flex items-center justify-center z-50' onClick={handleModal}>
+                <div className='bg-white p-5 rounded-lg text-sm text-center' onClick={(e)=>e.stopPropagation()}>
+                  <p className='mb-4 text-black '>You will be redirected to Eastcourt, a subsidiary of Mbelu Consulting to see available properties.</p>
+                                    <button onClick={handleModal} className='px-4 py-2 bg-amber-800 text-white rounded-lg hover:bg-amber-900 transition'>Cancel</button>  
+
+                  <a href='https://mceastcourt.com.ng' target='_blank' rel='noopener noreferrer' className='px-4 py-2 bg-amber-800 text-white rounded-lg hover:bg-amber-900 transition ml-5'>Proceed</a>  
+              
+              </div></div>}
             </div>
         </div>
       </div>

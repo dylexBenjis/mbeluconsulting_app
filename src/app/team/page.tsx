@@ -104,14 +104,21 @@ const page = () => {
                 <div className='flex flex-col h-[35rem] w-full shadow-md border-t-8 border-amber-900 bg-gray-100'>
                     <div className="group relative h-full w-full transform overflow-hidden rounded-4xl">
                       <div className="absolute h-[calc(35rem/1.5)] w-full bg-indigo-50 " style={{}}>
-                        <Image src='/eastcourt/image1.jpeg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
+                        <Image src='/eastcourt/ibra.jpeg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
                       </div>
                     </div>
                     <div className='h-[13rem] w-full bg-gray-100 transition duration-200 text-center p-5'>
-                      <h3 className=" font-display text-xl font-bold tracking-tight text-slate-900 ">KENNETH OBINNA ANIGBO,</h3>
-                      <p className="text-base tracking-tight text-slate-500 transition duration-300">ANIVS</p>
-                      <p className="text-base tracking-tight text-slate-500 transition duration-300">Partner</p>
-                      <p className="text-[12px] tracking-tight text-slate-500 transition duration-300">Strategic: Asset Appraisal, Property Management, Real Estate Marketing and Arbitration</p>
+                      <h3 className=" font-display text-xl font-bold tracking-tight text-slate-900 ">IBRAHIM TIJANI PHILIPS,</h3>
+                      {/* <p className="text-base tracking-tight text-slate-500 transition duration-300">ANIVS</p>
+                      <p className="text-base tracking-tight text-slate-500 transition duration-300">Partner</p> */}
+                      <p className="text-[12px] tracking-tight text-slate-500 transition duration-300">Strategic: Sales and Marketing strategies </p> <ul role="list" className="mt-1 text-xl flex flex-row gap-x-1 h-[1.5rem] justify-center items-center">
+                          <li className="flex w-[1.4rem] justify-center items-center">
+                              <a className="transition hover:text-[1.35rem]" href="tel: +2348038221999"><FaPhone/></a>
+                          </li>
+                          <li className="flex w-[1.4rem] justify-center items-center">
+                              <a className="transition hover:text-[1.35rem]" href="https://wa.me/+2348038221999"><FaWhatsapp/></a>
+                          </li>
+                      </ul>
                       {/* <ul role="list" className="mt-1 text-xl flex flex-row gap-x-1 h-[1.5rem] justify-center items-center">
                           <li className="flex w-[1.4rem] justify-center items-center">
                               <a className="transition hover:text-[1.35rem]" href="/work/family-fund"><FaXTwitter/></a>
@@ -125,7 +132,7 @@ const page = () => {
                 <div className='flex flex-col h-[35rem] w-full shadow-md border-t-8 border-amber-900 bg-gray-100'>
                     <div className="group relative h-full w-full transform overflow-hidden rounded-4xl  ">
                       <div className="absolute h-[calc(35rem/1.5)] w-full bg-indigo-50 " style={{}}>
-                        <Image src='https://mceastcourt.com.ng/wp-content/uploads/2024/04/IMG-20240418-WA0000.jpg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
+                        <Image src='/eastcourt/chioma.jpeg' alt="" fill={true} decoding="async" data-nimg="1" objectPosition='top' className="absolute inset-0 object-cover transition duration-700 scale-110 group-hover:scale-100" style={{ color: "transparent" }} sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw" />
                       </div>
                     </div>
                     <div className='h-[13rem] w-full bg-gray-100 transition duration-200 text-center p-5'>
